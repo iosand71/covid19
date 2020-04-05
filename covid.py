@@ -28,6 +28,10 @@ tick = matplotlib.ticker.FuncFormatter(lambda x, p: format(int(x), ','))
 data = pd.read_csv(url)
 data.data = pd.to_datetime(data.data)
 data['nuovi_decessi'] = data.deceduti.diff()
+data['mortalita'] = data.deceduti / data.totale_casi
+data['guariti'] = data.dimessi_guariti / data.totale_casi
+data['ricoverati'] = data.totale_ospedalizzati / data.totale_casi
+data['intensivi'] = data.terapia_intensiva / data.totale_casi
 data_pct = data[data.columns.difference(['data','stato','note_it','note_en'])].pct_change()
 updated_at = data.data.iloc[-1].strftime('%d/%m/%Y')
 locale.setlocale(locale.LC_ALL, 'it_IT.utf-8')
@@ -80,6 +84,13 @@ def print_last_result(label, column):
   print(label, thousands(last), end='\t')
   print(f' {tabs}( {pct_var:+.2%} )')
 
+def print_pct(label, column):
+  pct = data[column].iloc[-1]
+  pct_pct = data_pct[column].iloc[-1]
+  tabs = '\t\t\t' if pct <= 0.1 else '\t\t'
+  print(label, f'{pct:.2%}', end='')
+  print(f' {tabs}( {pct_pct:+.2%} )')
+
 def start():
   global data
   # Data model:
@@ -90,13 +101,20 @@ def start():
 
   print("Aggiornamento: ", updated_at, "\t\tvariazione rispetto a ieri")
   print("------------------------------------------------------------------")
-  print_last_result("Variazione nuovi casi: \t", 'variazione_totale_positivi')
-  print_last_result("Variazione decessi: \t", 'nuovi_decessi')
-  print_last_result("Totale decessi: \t", 'deceduti')
-  print_last_result("Totale nuovi casi: \t", 'nuovi_positivi')
   print_last_result("Totale casi: \t\t", 'totale_casi')
+  print_last_result("Totale nuovi casi: \t", 'nuovi_positivi')
+  print_last_result("Variazione nuovi casi: \t", 'variazione_totale_positivi')
+  print_last_result("Totale decessi: \t", 'deceduti')
+  print_last_result("Variazione decessi: \t", 'nuovi_decessi')
   print_last_result("Terapia intensiva: \t", 'terapia_intensiva')
+  print_last_result("Ospedalizzati: \t\t", 'totale_ospedalizzati')
+  print_last_result("Dimessi: \t\t", 'dimessi_guariti')
   print_last_result("Totale tamponi: \t", 'tamponi')
+  print()
+  print_pct("Mortalità: \t\t", 'mortalita')
+  print_pct("Critici: \t\t", 'intensivi')
+  print_pct("Ricoverati: \t\t", 'ricoverati')
+  print_pct("Guariti: \t\t", 'guariti')
 
   plt.rcParams['figure.figsize'] = [18, 6]
   sns.set(style='whitegrid')
@@ -104,7 +122,7 @@ def start():
   plots = data \
     .loc[:,['totale_casi','variazione_totale_positivi', 'terapia_intensiva',
             'totale_ospedalizzati','deceduti','dimessi_guariti','nuovi_decessi',
-            'nuovi_positivi']] \
+            'nuovi_positivi','tamponi']] \
     .plot(kind='line',
             subplots=True,
             sharex=True,
@@ -121,6 +139,7 @@ def start():
   plt_dimessi = fmt_plot(plots[1][2], 5000)
   plt_nuovi_decessi = fmt_plot(plots[2][0], 200)
   plt_nuovi = fmt_plot(plots[2][1], 1000)
+  plt_tamponi = fmt_plot(plots[2][2], 100000)
   plt.suptitle("Covid19 Dati DPC del " + updated_at)
 
   # Ask for graphs
