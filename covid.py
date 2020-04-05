@@ -182,6 +182,7 @@ def start():
 
   x = data.index
   y = data.totale_casi
+
   def exponential_model(x,a,b,c):
       return a * np.exp(-b * x) + c
   transformer = FunctionTransformer(np.log, validate=True)
@@ -204,20 +205,28 @@ def start():
     plt.semilogy()
 
   fmt_plot(plt.gca(), 20000)
-  plt.ylabel("Numero totale di infetti")
+  plt.ylabel("Numero casi")
   plt.ylim(1, 150000)
 
   # Regression analysis
-  coefficients = np.polyfit(x.values, y.values, order)
+  coefficients = np.polyfit(x.values, data.totale_casi.values, order)
   poly = np.poly1d(coefficients)
+  coefficients2 = np.polyfit(x.values, data.totale_ospedalizzati.values, order)
+  poly2 = np.poly1d(coefficients2)
+  coefficients3 = np.polyfit(x.values, data.terapia_intensiva.values, order)
+  poly3 = np.poly1d(coefficients3)
 
-  plt_scatter = plt.scatter(x,y,label="Dati reali",color="red")
+  plt_scatter = plt.scatter(x,data.totale_casi,label="Totale casi", color="blue")
+  plt_scatter2 = plt.scatter(x,data.totale_ospedalizzati, label="Ospedalizzati", color="green")
+  plt_scatter3 = plt.scatter(x,data.terapia_intensiva, label="Terapia intensiva", color="orange")
   # plt_exp = plt.plot(pred_x, np.exp(y_fit), label="Regressione esponenziale")
-  plt_poly = plt.plot(pred_x, poly(pred_x), label="Regressione polinomiale, grado=" + str(order))
+  plt_poly = plt.plot(pred_x, poly(pred_x))
+  plt_poly2 = plt.plot(pred_x, poly2(pred_x))
+  plt_poly3 = plt.plot(pred_x, poly3(pred_x))
 
   plt.legend()
   plt.suptitle("Covid19 Dati DPC del " + updated_at)
-  plt.title("Analisi regressione")
+  plt.title("Regressione polinomiale, grado=" + str(order))
 
   plt.show()
 
