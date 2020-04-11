@@ -1,3 +1,4 @@
+#!/bin/bash
 jupyter nbconvert --template=nbextensions --to=html covid19-italia.ipynb
 cp covid19-italia.html ~/Projects/iosand/public/
 cd ~/Projects/iosand/

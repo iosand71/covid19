@@ -5,21 +5,17 @@ import sys, getopt
 import pandas as pd
 import numpy as np
 from datetime import datetime,timedelta
-from sklearn.metrics import mean_squared_error
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import FunctionTransformer
-from scipy.optimize import curve_fit
-from scipy.optimize import fsolve
 import matplotlib.pyplot as plt
-import seaborn as sns
 from matplotlib.ticker import AutoMinorLocator, MultipleLocator
 import matplotlib
 
 # Config
 
 url = "https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-andamento-nazionale/dpc-covid19-ita-andamento-nazionale.csv"
-days_range = 45
-order = 4
+days_range = 50
+order = 3
 log_scale = False
 
 # Implementation
@@ -117,7 +113,6 @@ def start():
   print_pct("Guariti: \t\t", 'guariti')
 
   plt.rcParams['figure.figsize'] = [18, 6]
-  sns.set(style='whitegrid')
 
   plots = data \
     .loc[:,['totale_casi','variazione_totale_positivi', 'terapia_intensiva',
@@ -199,7 +194,6 @@ def start():
   # Plot setup
   plt.figure()
   plt.rcParams['figure.figsize'] = [10, 6]
-  sns.set(style='whitegrid')
 
   if log_scale:
     plt.semilogy()
@@ -225,6 +219,7 @@ def start():
   plt_poly3 = plt.plot(pred_x, poly3(pred_x))
 
   plt.legend()
+  plt.ylim(0, poly(pred_x).max().item() * 1.1)
   plt.suptitle("Covid19 Dati DPC del " + updated_at)
   plt.title("Regressione polinomiale, grado=" + str(order))
 
