@@ -14,7 +14,7 @@ import matplotlib
 # Config
 
 url = "https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-andamento-nazionale/dpc-covid19-ita-andamento-nazionale.csv"
-days_range = 50
+days_range = 60
 order = 3
 log_scale = False
 
