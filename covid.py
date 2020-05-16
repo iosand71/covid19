@@ -78,6 +78,7 @@ def start():
   print_last_result("Ospedalizzati: \t\t", 'totale_ospedalizzati')
   print_last_result("Dimessi: \t\t", 'dimessi_guariti')
   print_last_result("Totale tamponi: \t", 'tamponi')
+  print_last_result("Totale testati: \t", 'casi_testati')
   print()
   print_pct("Mortalità: \t\t", 'mortalita')
   print_pct("Critici: \t\t", 'intensivi')
