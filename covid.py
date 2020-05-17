@@ -8,10 +8,11 @@ Covid19 data analysis for italy
 import locale
 import sys, getopt
 import pandas as pd
-import numpy as np
 from datetime import datetime,timedelta
 
 url = "https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-andamento-nazionale/dpc-covid19-ita-andamento-nazionale.csv"
+pd.options.display.float_format = '{:,.3f}'.format
+
 data = pd.read_csv(url)
 data.data = pd.to_datetime(data.data)
 data['nuovi_decessi'] = data.deceduti.diff()
