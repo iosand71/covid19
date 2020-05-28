@@ -54,7 +54,7 @@ recap = pd.DataFrame({
                                      data_pct.intensivi.iloc[-1], data_pct.ricoverati.iloc[-1],
                                      data_pct.guariti.iloc[-1]]
 
-}, index=['Totale casi','Attualmente positivi','Totale nuovi casi', 'Variazione nuovi casi', 'Totale decessi',
+}, index=['Totale casi','Attualmente positivi','Variazione totale casi', 'Variazione attualmente positivi', 'Totale decessi',
              'Variazione decessi','Terapia intensiva','Ospedalizzati','Dimessi','Totale tamponi','Casi testati',
              'Mortalità', 'Critici', 'Ricoverati','Guariti'])
 
