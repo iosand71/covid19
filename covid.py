@@ -21,12 +21,12 @@ data['guariti'] = data.dimessi_guariti / data.totale_casi
 data['ricoverati'] = data.totale_ospedalizzati / data.totale_casi
 data['intensivi'] = data.terapia_intensiva / data.totale_casi
 
-data_pct = data[data.columns.difference(['data','stato','note_it','note_en'])].pct_change()
+data_pct = data[data.columns.difference(['data','stato','note','note_it','note_en','casi_da_sospetto_diagnostico','casi_da_screening'])].pct_change()
 data_pct.insert(0,'data', data.data)
 
 statistics = data.loc[:,['data','totale_casi','totale_positivi','nuovi_positivi','variazione_totale_positivi','deceduti',
-                       'nuovi_decessi','terapia_intensiva','totale_ospedalizzati','dimessi_guariti',
-                       'tamponi','casi_testati']]
+                         'nuovi_decessi','terapia_intensiva','totale_ospedalizzati','dimessi_guariti',
+                         'tamponi','casi_testati']]
 statistics.insert(0,'% mortalita', data.mortalita)
 statistics.insert(0,'% intensivi', data.intensivi)
 statistics.insert(0,'% ricoverati', data.ricoverati)
