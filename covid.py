@@ -73,6 +73,7 @@ class DailyStats:
     def __init__(self):
       pass
 
+    @staticmethod
     def print_last_day(label, column):
       last = data[column].iloc[-1]
       pct_var = data_pct[column].iloc[-1]
@@ -80,17 +81,20 @@ class DailyStats:
       print(label, thousands(last), end='\t')
       print(f' {tabs}( {pct_var:+.2%} )')
 
+    @staticmethod
     def print_as_pct(label, column):
       pct = data[column].iloc[-1]
       pct_pct = data_pct[column].iloc[-1]
       tabs = '\t\t\t' if pct <= 0.1 else '\t\t'
       print(label, f'{pct:.2%}', end='')
       print(f' {tabs}( {pct_pct:+.2%} )')
-    
+
+    @staticmethod
     def dictionary():
       for name in data.columns:
         print(name)
 
+    @staticmethod
     def print():
       # Data model:
       # ricoverati_con_sintomi terapia_intensiva totale_ospedalizzati 
@@ -123,11 +127,11 @@ def main(argv):
   help_str = 'usage: covid.py'
   locale.setlocale(locale.LC_ALL, 'it_IT.utf-8')
   try:
-    opts, args = getopt.getopt(argv, "h:")
+    opts = getopt.getopt(argv, "h:")
   except getopt.GetoptError:
       print (help_str)
       sys.exit(2)
-  for opt, arg in opts:
+  for opt in opts:
     if opt == '-h':
       print (help_str)
       sys.exit()
