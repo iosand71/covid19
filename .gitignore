@@ -2,4 +2,5 @@
 .Rhistory
 .ipynb_checkpoints/
 .idea/
+.vim/
 __pycache__/
