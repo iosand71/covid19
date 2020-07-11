@@ -65,7 +65,7 @@ pivot.columns = pivot.columns.strftime('%d/%m/%Y')
 updated_at = data.data.iloc[-1].strftime('%d/%m/%Y')
 
 def thousands(value):
-  return f'{value:,}'
+  return f'{value:20,.0f}'
 
 class DailyStats:
     """ Daily stats for covid19 in Italy """
@@ -77,17 +77,15 @@ class DailyStats:
     def print_last_day(label, column):
       last = data[column].iloc[-1]
       pct_var = data_pct[column].iloc[-1]
-      tabs = '\t' if last >= 100000 else '\t\t'
-      print(label, thousands(last), end='\t')
-      print(f' {tabs}( {pct_var:+.2%} )')
+      print(label, thousands(last), end='')
+      print(f'{pct_var:+20.2%}')
 
     @staticmethod
     def print_as_pct(label, column):
       pct = data[column].iloc[-1]
       pct_pct = data_pct[column].iloc[-1]
-      tabs = '\t\t\t' if pct <= 0.1 else '\t\t'
-      print(label, f'{pct:.2%}', end='')
-      print(f' {tabs}( {pct_pct:+.2%} )')
+      print(label, f'{pct:20.2%}', end='')
+      print(f'{pct_pct:+20.2%}')
 
     @staticmethod
     def dictionary():
@@ -100,10 +98,10 @@ class DailyStats:
       # ricoverati_con_sintomi terapia_intensiva totale_ospedalizzati 
       # isolamento_domiciliare totale_positivi variazione_totale_positivi 
       # nuovi_positivi dimessi_guariti deceduti totale_casi tamponi casi_testati 
-      # note_it note_en
+      # note_it note_en casi_da_sospetto_diagnostico casi_da_screening
 
-      print("Aggiornamento: ", updated_at, "\t\tvariazione rispetto a ieri")
-      print("------------------------------------------------------------------")
+      print("Aggiornamento: ", updated_at, "\t\t\tvariazione rispetto a ieri")
+      print("----------------------------------------------------------------------------")
       DailyStats.print_last_day("Totale casi: \t\t", 'totale_casi')
       DailyStats.print_last_day("Variaziohe casi: \t", 'nuovi_positivi')
       DailyStats.print_last_day("Totale positivi: \t", 'totale_positivi')
@@ -117,7 +115,7 @@ class DailyStats:
       DailyStats.print_last_day("Totale testati: \t", 'casi_testati')
       print()
 
-      DailyStats.print_as_pct("Mortalità: \t\t", 'mortalita')
+      DailyStats.print_as_pct("Morti: \t\t\t", 'mortalita')
       DailyStats.print_as_pct("Critici: \t\t", 'intensivi')
       DailyStats.print_as_pct("Ricoverati: \t\t", 'ricoverati')
       DailyStats.print_as_pct("Guariti: \t\t", 'guariti')
