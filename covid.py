@@ -64,9 +64,6 @@ pivot.columns = pivot.columns.strftime('%d/%m/%Y')
 
 updated_at = data.data.iloc[-1].strftime('%d/%m/%Y')
 
-def thousands(value):
-  return f'{value:20,.0f}'
-
 class DailyStats:
     """ Daily stats for covid19 in Italy """
 
@@ -77,7 +74,7 @@ class DailyStats:
     def print_last_day(label, column):
       last = data[column].iloc[-1]
       pct_var = data_pct[column].iloc[-1]
-      print(label, thousands(last), end='')
+      print(label, f'{last:20,.0f}', end='')
       print(f'{pct_var:+20.2%}')
 
     @staticmethod
