@@ -64,59 +64,51 @@ pivot.columns = pivot.columns.strftime('%d/%m/%Y')
 
 updated_at = data.data.iloc[-1].strftime('%d/%m/%Y')
 
-class DailyStats:
+def dictionary():
+  for name in data.columns:
+    print(name)
+
+def daily_stats():
     """ Daily stats for covid19 in Italy """
 
-    def __init__(self):
-      pass
-
-    @staticmethod
     def print_last_day(label, column):
       last = data[column].iloc[-1]
       pct_var = data_pct[column].iloc[-1]
       print(label, f'{last:20,.0f}', end='')
       print(f'{pct_var:+20.2%}')
 
-    @staticmethod
     def print_as_pct(label, column):
       pct = data[column].iloc[-1]
       pct_pct = data_pct[column].iloc[-1]
       print(label, f'{pct:20.2%}', end='')
       print(f'{pct_pct:+20.2%}')
 
-    @staticmethod
-    def dictionary():
-      for name in data.columns:
-        print(name)
+    # Data model:
+    # ricoverati_con_sintomi terapia_intensiva totale_ospedalizzati 
+    # isolamento_domiciliare totale_positivi variazione_totale_positivi 
+    # nuovi_positivi dimessi_guariti deceduti totale_casi tamponi casi_testati 
+    # note_it note_en casi_da_sospetto_diagnostico casi_da_screening
 
-    @staticmethod
-    def print():
-      # Data model:
-      # ricoverati_con_sintomi terapia_intensiva totale_ospedalizzati 
-      # isolamento_domiciliare totale_positivi variazione_totale_positivi 
-      # nuovi_positivi dimessi_guariti deceduti totale_casi tamponi casi_testati 
-      # note_it note_en casi_da_sospetto_diagnostico casi_da_screening
+    print("Aggiornamento: ", updated_at, "\t\t\tvariazione rispetto a ieri")
+    print("----------------------------------------------------------------------------")
+    print_last_day("Totale casi: \t\t", 'totale_casi')
+    print_last_day("Variaziohe casi: \t", 'nuovi_positivi')
+    print_last_day("Totale positivi: \t", 'totale_positivi')
+    print_last_day("Variazione positivi: \t", 'variazione_totale_positivi')
+    print_last_day("Totale decessi: \t", 'deceduti')
+    print_last_day("Variazione decessi: \t", 'nuovi_decessi')
+    print_last_day("Terapia intensiva: \t", 'terapia_intensiva')
+    print_last_day("Ospedalizzati: \t\t", 'totale_ospedalizzati')
+    print_last_day("Dimessi: \t\t", 'dimessi_guariti')
+    print_last_day("Totale tamponi: \t", 'tamponi')
+    print_last_day("Totale testati: \t", 'casi_testati')
+    print()
 
-      print("Aggiornamento: ", updated_at, "\t\t\tvariazione rispetto a ieri")
-      print("----------------------------------------------------------------------------")
-      DailyStats.print_last_day("Totale casi: \t\t", 'totale_casi')
-      DailyStats.print_last_day("Variaziohe casi: \t", 'nuovi_positivi')
-      DailyStats.print_last_day("Totale positivi: \t", 'totale_positivi')
-      DailyStats.print_last_day("Variazione positivi: \t", 'variazione_totale_positivi')
-      DailyStats.print_last_day("Totale decessi: \t", 'deceduti')
-      DailyStats.print_last_day("Variazione decessi: \t", 'nuovi_decessi')
-      DailyStats.print_last_day("Terapia intensiva: \t", 'terapia_intensiva')
-      DailyStats.print_last_day("Ospedalizzati: \t\t", 'totale_ospedalizzati')
-      DailyStats.print_last_day("Dimessi: \t\t", 'dimessi_guariti')
-      DailyStats.print_last_day("Totale tamponi: \t", 'tamponi')
-      DailyStats.print_last_day("Totale testati: \t", 'casi_testati')
-      print()
-
-      DailyStats.print_as_pct("Morti: \t\t\t", 'mortalita')
-      DailyStats.print_as_pct("Critici: \t\t", 'intensivi')
-      DailyStats.print_as_pct("Ricoverati: \t\t", 'ricoverati')
-      DailyStats.print_as_pct("Guariti: \t\t", 'guariti')
-      print()
+    print_as_pct("Morti: \t\t\t", 'mortalita')
+    print_as_pct("Critici: \t\t", 'intensivi')
+    print_as_pct("Ricoverati: \t\t", 'ricoverati')
+    print_as_pct("Guariti: \t\t", 'guariti')
+    print()
 
 def main(argv):
   help_str = 'usage: covid.py'
@@ -130,7 +122,7 @@ def main(argv):
     if opt == '-h':
       print (help_str)
       sys.exit()
-  DailyStats.print()
+  daily_stats()
 
 if __name__ == "__main__":
    main(sys.argv[1:])
