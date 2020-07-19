@@ -8,6 +8,7 @@ Covid19 data analysis for italy
 import locale
 import sys, getopt
 import pandas as pd
+import numpy as np
 from datetime import datetime,timedelta
 
 url = "https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-andamento-nazionale/dpc-covid19-ita-andamento-nazionale.csv"
@@ -109,6 +110,52 @@ def daily_stats():
     print_as_pct("Ricoverati: \t\t", 'ricoverati')
     print_as_pct("Guariti: \t\t", 'guariti')
     print()
+
+def base_seir_model(init_vals, params, t):
+    """
+    Params value for coronavirus (estimates)
+      alpha = 0.57 # inverse of incubation period (0.210) 1/5.3 days
+      beta = 1.2 # averate contact rate of the population (0.005)
+      gamma = 0.449 # inverse of mean infection period (0.11) 1/2.9
+      R0 = beta / gamma (2.6 - 4.34)
+      
+      initial values:
+      S_0 = 1 - 222/60360000 # susceptibles
+      E_0 = 1 / 60360000 # exposed
+      I_0 = 200 # infected
+      R_0 = 22 # recovered
+    """
+    S_0, E_0, I_0, R_0 = init_vals
+    S, E, I, R = [S_0], [E_0], [I_0], [R_0]
+    alpha, beta, gamma = params
+    dt = t[1] - t[0]
+    for _ in t[1:]:
+        next_S = S[-1] - (beta*S[-1]*I[-1])*dt
+        next_E = E[-1] + (beta*S[-1]*I[-1] - alpha*E[-1])*dt
+        next_I = I[-1] + (alpha*E[-1] - gamma*I[-1])*dt
+        next_R = R[-1] + (gamma*I[-1])*dt
+        S.append(next_S)
+        E.append(next_E)
+        I.append(next_I)
+        R.append(next_R)
+    return np.stack([S, E, I, R]).T
+
+def seir_model_with_soc_dist(init_vals, params, t):
+    """ rho = social distancing percentage """
+    S_0, E_0, I_0, R_0 = init_vals
+    S, E, I, R = [S_0], [E_0], [I_0], [R_0]
+    alpha, beta, gamma, rho = params
+    dt = t[1] - t[0]
+    for _ in t[1:]:
+        next_S = S[-1] - (rho*beta*S[-1]*I[-1])*dt
+        next_E = E[-1] + (rho*beta*S[-1]*I[-1] - alpha*E[-1])*dt
+        next_I = I[-1] + (alpha*E[-1] - gamma*I[-1])*dt
+        next_R = R[-1] + (gamma*I[-1])*dt
+        S.append(next_S)
+        E.append(next_E)
+        I.append(next_I)
+        R.append(next_R)
+    return np.stack([S, E, I, R]).T
 
 def main(argv):
   help_str = 'usage: covid.py'
