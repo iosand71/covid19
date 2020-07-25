@@ -118,12 +118,12 @@ def base_seir_model(init_vals, params, t):
       beta = 1.2 # averate contact rate of the population (0.005)
       gamma = 0.449 # inverse of mean infection period (0.11) 1/2.9
       R0 = beta / gamma (2.6 - 4.34)
-      
+
       initial values:
       S_0 = 1 - 222/60360000 # susceptibles
       E_0 = 1 / 60360000 # exposed
       I_0 = 200 # infected
-      R_0 = 22 # recovered
+      R_0 = 2.44 # recovered
     """
     S_0, E_0, I_0, R_0 = init_vals
     S, E, I, R = [S_0], [E_0], [I_0], [R_0]
