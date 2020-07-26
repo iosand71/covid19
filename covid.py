@@ -11,6 +11,7 @@ import pandas as pd
 import numpy as np
 from datetime import datetime,timedelta
 
+global_url = "https://data.humdata.org/hxlproxy/api/data-preview.csv?url=https%3A%2F%2Fraw.githubusercontent.com%2FCSSEGISandData%2FCOVID-19%2Fmaster%2Fcsse_covid_19_data%2Fcsse_covid_19_time_series%2Ftime_series_covid19_confirmed_global.csv&filename=time_series_covid19_confirmed_global.csv"
 url = "https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-andamento-nazionale/dpc-covid19-ita-andamento-nazionale.csv"
 pd.options.display.float_format = '{:,.3f}'.format
 
@@ -113,17 +114,19 @@ def daily_stats():
 
 def base_seir_model(init_vals, params, t):
     """
-    Params value for coronavirus (estimates)
-      alpha = 0.57 # inverse of incubation period (0.210) 1/5.3 days
-      beta = 1.2 # averate contact rate of the population (0.005)
-      gamma = 0.449 # inverse of mean infection period (0.11) 1/2.9
-      R0 = beta / gamma (2.6 - 4.34)
+    SEIR infection model.
+
+    Params value for coronavirus (estimates):
+      alpha = 0.189 # 1 / incubation_period  (1/5.3 days)
+      beta = 1.2 # average contact rate of the population (gamma * R0)
+      gamma = 0.0166 # 1 / latent_time (1/60 days)
+      R0 = beta / gamma (2.6 - 4.34).
 
       initial values:
       S_0 = 1 - 222/60360000 # susceptibles
       E_0 = 1 / 60360000 # exposed
       I_0 = 200 # infected
-      R_0 = 2.44 # recovered
+      R_0 = 0 # recovered,
     """
     S_0, E_0, I_0, R_0 = init_vals
     S, E, I, R = [S_0], [E_0], [I_0], [R_0]
@@ -141,7 +144,7 @@ def base_seir_model(init_vals, params, t):
     return np.stack([S, E, I, R]).T
 
 def seir_model_with_soc_dist(init_vals, params, t):
-    """ rho = social distancing percentage """
+    """ rho = social distancing factor."""
     S_0, E_0, I_0, R_0 = init_vals
     S, E, I, R = [S_0], [E_0], [I_0], [R_0]
     alpha, beta, gamma, rho = params
