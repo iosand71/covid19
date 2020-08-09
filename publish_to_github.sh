@@ -7,3 +7,5 @@ cd ../iosand71.github.io
 git add .
 git commit -m "update covid report"
 git push origin master
+cd ../covid19
+rm covid19-*.html
