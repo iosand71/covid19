@@ -13,10 +13,10 @@ from scipy import stats as sps
 from scipy.interpolate import interp1d
 from datetime import datetime,timedelta
 
-global_url = "https://data.humdata.org/hxlproxy/api/data-preview.csv?url=https%3A%2F%2Fraw.githubusercontent.com%2FCSSEGISandData%2FCOVID-19%2Fmaster%2Fcsse_covid_19_data%2Fcsse_covid_19_time_series%2Ftime_series_covid19_confirmed_global.csv&filename=time_series_covid19_confirmed_global.csv"
 url = "https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-andamento-nazionale/dpc-covid19-ita-andamento-nazionale.csv"
 url_regions = "https://github.com/pcm-dpc/COVID-19/raw/master/dati-regioni/dpc-covid19-ita-regioni.csv"
 url_provinces = "https://github.com/pcm-dpc/COVID-19/raw/master/dati-province/dpc-covid19-ita-province.csv"
+global_url = "https://data.humdata.org/hxlproxy/api/data-preview.csv?url=https%3A%2F%2Fraw.githubusercontent.com%2FCSSEGISandData%2FCOVID-19%2Fmaster%2Fcsse_covid_19_data%2Fcsse_covid_19_time_series%2Ftime_series_covid19_confirmed_global.csv&filename=time_series_covid19_confirmed_global.csv"
 pd.options.display.float_format = '{:,.3f}'.format
 
 # https://www.sciencedirect.com/science/article/pii/S1201971220301193
@@ -24,35 +24,67 @@ GAMMA = 1/4.6
 R_T_MAX = 12
 r_t_range = np.linspace(0, R_T_MAX, R_T_MAX*100+1)
 
+
+def add_columns(df):
+  """
+    Add columns for new deaths and percentages.
+  """
+  df['nuovi_decessi'] = df.deceduti.diff()
+  df['mortalita'] = df.deceduti / df.totale_casi
+  df['guariti'] = df.dimessi_guariti / df.totale_casi
+  df['ricoverati'] = df.totale_ospedalizzati / df.totale_casi
+  df['intensivi'] = df.terapia_intensiva / df.totale_casi
+  df['tamponi_odierni'] = df.tamponi.diff()
+
+def calc_statistics(df):
+  """
+    Build cleaned up dataframe with just stats columns.
+  """
+  statistics = df.loc[:,['data','totale_casi','totale_positivi','nuovi_positivi','variazione_totale_positivi','deceduti',
+                           'nuovi_decessi','terapia_intensiva','totale_ospedalizzati','dimessi_guariti',
+                           'tamponi','casi_testati']]
+  statistics.insert(0,'% mortalita', df.mortalita)
+  statistics.insert(0,'% intensivi', df.intensivi)
+  statistics.insert(0,'% ricoverati', df.ricoverati)
+  statistics.insert(0,'% guariti', df.guariti)
+
+  return statistics
+
+def calc_percentages(df):
+  """
+    Build dataframe with percent changes day to day.
+  """
+  df_pct = df[df.columns.difference(['data','stato','note','note_it','note_en', 
+    'casi_da_sospetto_diagnostico','casi_da_screening',
+    'codice_regione','denominazione_regione','lat','long'])].pct_change()
+  df_pct.insert(0,'data', df.data)
+
+  return df_pct
+
+def load_regional():
+  """
+    Load regional dataset.
+  """
+  global data_reg, data_reg_pct
+  data_reg = pd.read_csv(url_regions)
+  data_reg.data = pd.to_datetime(data_reg.data)
+  add_columns(data_reg)
+  data_reg_pct = calc_percentages(data_reg)
+
+def load_provincial():
+  """
+    Load provincial dataset.
+  """
+  global data_prov
+  data_prov =  pd.read_csv(url_provinces)
+  data_prov.data = pd.to_datetime(data_prov.data)
+
 data = pd.read_csv(url)
-data_reg = pd.read_csv(url_regions)
-data_prov =  pd.read_csv(url_provinces)
-
 data.data = pd.to_datetime(data.data)
-data_reg.data = pd.to_datetime(data_reg.data)
-data_prov.data = pd.to_datetime(data_prov.data)
 
-data['nuovi_decessi'] = data.deceduti.diff()
-data_reg['nuovi_decessi'] = data_reg.deceduti.diff()
-data['mortalita'] = data.deceduti / data.totale_casi
-data_reg['mortalita'] = data_reg.deceduti / data_reg.totale_casi
-data['guariti'] = data.dimessi_guariti / data.totale_casi
-data_reg['guariti'] = data_reg.dimessi_guariti / data_reg.totale_casi
-data['ricoverati'] = data.totale_ospedalizzati / data.totale_casi
-data_reg['ricoverati'] = data_reg.totale_ospedalizzati / data_reg.totale_casi
-data['intensivi'] = data.terapia_intensiva / data.totale_casi
-data_reg['intensivi'] = data_reg.terapia_intensiva / data_reg.totale_casi
-
-data_pct = data[data.columns.difference(['data','stato','note','note_it','note_en','casi_da_sospetto_diagnostico','casi_da_screening'])].pct_change()
-data_pct.insert(0,'data', data.data)
-
-statistics = data.loc[:,['data','totale_casi','totale_positivi','nuovi_positivi','variazione_totale_positivi','deceduti',
-                         'nuovi_decessi','terapia_intensiva','totale_ospedalizzati','dimessi_guariti',
-                         'tamponi','casi_testati']]
-statistics.insert(0,'% mortalita', data.mortalita)
-statistics.insert(0,'% intensivi', data.intensivi)
-statistics.insert(0,'% ricoverati', data.ricoverati)
-statistics.insert(0,'% guariti', data.guariti)
+add_columns(data)
+data_pct = calc_percentages(data)
+statistics = calc_statistics(data)
 
 recap = pd.DataFrame({
     'Valore assoluto': [data.totale_casi.iloc[-1],data.totale_positivi.iloc[-1], data.nuovi_positivi.iloc[-1],
@@ -119,6 +151,7 @@ def daily_stats():
     print_last_day("Ospedalizzati: \t\t", 'totale_ospedalizzati')
     print_last_day("Dimessi: \t\t", 'dimessi_guariti')
     print_last_day("Totale tamponi: \t", 'tamponi')
+    print_last_day("Tamponi odierni: \t", 'tamponi_odierni')
     print_last_day("Totale testati: \t", 'casi_testati')
     print()
 
