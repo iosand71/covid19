@@ -71,6 +71,12 @@ def load_regional():
   add_columns(data_reg)
   data_reg_pct = calc_percentages(data_reg)
 
+def get_region(df, region):
+  """
+    Extract a single region from regional dataset.
+  """
+  returb df[df.denominazione_regione == region]
+
 def load_provincial():
   """
     Load provincial dataset.
@@ -302,6 +308,20 @@ def highest_density_interval(pmf, p=.9, debug=False):
     return pd.Series([low, high],
                      index=[f'Low_{p*100:.0f}',
                             f'High_{p*100:.0f}'])
+
+def estimate_rt(df, sigma=0.15):
+  """
+    Bayesian estimation of Rt.
+    df = data source
+    sigma default = 0.15 (national estimate with best log likelihood)
+  """
+  original, smoothed = prepare_cases(df.totale_casi)
+  posteriors, log_likelihood = get_posteriors(smoothed, sigma=sigma)
+  hdis = highest_density_interval(posteriors, p=.9)
+  most_likely = posteriors.idxmax().rename('ML')
+  result = pd.concat([most_likely, hdis], axis=1)
+
+  return result
 
 def main(argv):
   help_str = 'usage: covid.py'
