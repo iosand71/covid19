@@ -29,6 +29,8 @@ def add_columns(df):
   """
     Add columns for new deaths and percentages.
   """
+  df.set_index(['data'], inplace=True)
+  df['date'] = df.index
   df['nuovi_decessi'] = df.deceduti.diff()
   df['mortalita'] = df.deceduti / df.totale_casi
   df['guariti'] = df.dimessi_guariti / df.totale_casi
@@ -40,7 +42,7 @@ def calc_statistics(df):
   """
     Build cleaned up dataframe with just stats columns.
   """
-  statistics = df.loc[:,['data','totale_casi','totale_positivi','nuovi_positivi','variazione_totale_positivi','deceduti',
+  statistics = df.loc[:,['date','totale_casi','totale_positivi','nuovi_positivi','variazione_totale_positivi','deceduti',
                            'nuovi_decessi','terapia_intensiva','totale_ospedalizzati','dimessi_guariti',
                            'tamponi','casi_testati']]
   statistics.insert(0,'% mortalita', df.mortalita)
@@ -54,10 +56,10 @@ def calc_percentages(df):
   """
     Build dataframe with percent changes day to day.
   """
-  df_pct = df[df.columns.difference(['data','stato','note','note_it','note_en', 
+  df_pct = df[df.columns.difference(['date','stato','note','note_it','note_en', 
     'casi_da_sospetto_diagnostico','casi_da_screening',
     'codice_regione','denominazione_regione','lat','long'])].pct_change()
-  df_pct.insert(0,'data', df.data)
+  df_pct.insert(0,'data', df.date)
 
   return df_pct
 
@@ -75,7 +77,7 @@ def get_region(df, region):
   """
     Extract a single region from regional dataset.
   """
-  returb df[df.denominazione_regione == region]
+  return df[df.denominazione_regione == region]
 
 def load_provincial():
   """
@@ -118,11 +120,11 @@ recap = pd.DataFrame({
              'Variazione decessi','Terapia intensiva','Ospedalizzati','Dimessi','Totale tamponi','Casi testati',
              'Mortalità', 'Critici', 'Ricoverati','Guariti'])
 
-pivot = pd.pivot_table(statistics, columns=['data'])
-pivot.sort_values(axis = 1, by=['data'], ascending=False, inplace=True)
+pivot = pd.pivot_table(statistics, columns=['date'])
+pivot.sort_values(axis = 1, by=['date'], ascending=False, inplace=True)
 pivot.columns = pivot.columns.strftime('%d/%m/%Y')
 
-updated_at = data.data.iloc[-1].strftime('%d/%m/%Y')
+updated_at = data.date.iloc[-1].strftime('%d/%m/%Y')
 
 def daily_stats():
     """ Daily stats for covid19 in Italy. """
