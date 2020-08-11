@@ -2,10 +2,11 @@
 # coding: utf-8
 """ Covid 
 
-Covid19 data analysis for italy
+Covid19 data analysis for italy.
 
 """
 import locale
+import click
 import sys, getopt
 import pandas as pd
 import numpy as np
@@ -23,25 +24,25 @@ pd.options.display.float_format = '{:,.3f}'.format
 GAMMA = 1/4.6
 R_T_MAX = 12
 r_t_range = np.linspace(0, R_T_MAX, R_T_MAX*100+1)
+COLS = ['date','ricoverati_con_sintomi','totale_casi','totale_positivi','nuovi_positivi','variazione_totale_positivi','deceduti',
+    'nuovi_decessi','terapia_intensiva','totale_ospedalizzati','dimessi_guariti','isolamento_domiciliare',
+    'casi_da_sospetto_diagnostico','casi_da_screening',
+    'tamponi','casi_testati']
 
+pd.set_option('mode.chained_assignment', None)
 
 def add_columns(df):
-  """
-    Add columns for new deaths and percentages.
-  """
-  df.set_index(['data'], inplace=True)
-  df['date'] = df.index
-  df['nuovi_decessi'] = df.deceduti.diff()
-  df['mortalita'] = df.deceduti / df.totale_casi
-  df['guariti'] = df.dimessi_guariti / df.totale_casi
-  df['ricoverati'] = df.totale_ospedalizzati / df.totale_casi
-  df['intensivi'] = df.terapia_intensiva / df.totale_casi
-  df['tamponi_odierni'] = df.tamponi.diff()
+  """ Add columns for new deaths and percentages.  """
+  df.loc[:,'date'] = df.index
+  df.loc[:,'nuovi_decessi'] = df.deceduti.diff()
+  df.loc[:,'mortalita'] = df.deceduti / df.totale_casi
+  df.loc[:,'guariti'] = df.dimessi_guariti / df.totale_casi
+  df.loc[:,'ricoverati'] = df.totale_ospedalizzati / df.totale_casi
+  df.loc[:,'intensivi'] = df.terapia_intensiva / df.totale_casi
+  df.loc[:,'tamponi_per_die'] = df.tamponi.diff()
 
 def calc_statistics(df):
-  """
-    Build cleaned up dataframe with just stats columns.
-  """
+  """ Build cleaned up dataframe with just stats columns.  """
   statistics = df.loc[:,['date','totale_casi','totale_positivi','nuovi_positivi','variazione_totale_positivi','deceduti',
                            'nuovi_decessi','terapia_intensiva','totale_ospedalizzati','dimessi_guariti',
                            'tamponi','casi_testati']]
@@ -53,9 +54,7 @@ def calc_statistics(df):
   return statistics
 
 def calc_percentages(df):
-  """
-    Build dataframe with percent changes day to day.
-  """
+  """ Build dataframe with percent changes day to day.  """
   df_pct = df[df.columns.difference(['date','stato','note','note_it','note_en', 
     'casi_da_sospetto_diagnostico','casi_da_screening',
     'codice_regione','denominazione_regione','lat','long'])].pct_change()
@@ -64,35 +63,39 @@ def calc_percentages(df):
   return df_pct
 
 def load_regional():
-  """
-    Load regional dataset.
-  """
+  """ Load regional dataset.  """
   global data_reg, data_reg_pct
-  data_reg = pd.read_csv(url_regions)
-  data_reg.data = pd.to_datetime(data_reg.data)
+  data_reg = pd.read_csv(url_regions, parse_dates=['data'], index_col=['data'])
   add_columns(data_reg)
   data_reg_pct = calc_percentages(data_reg)
 
 def get_region(df, region):
-  """
-    Extract a single region from regional dataset.
-  """
+  """ Extract a single region from regional dataset.  """
   return df[df.denominazione_regione == region]
 
+def set_region(region):
+  global data, data_reg
+  data = get_region(data_reg, region)
+
 def load_provincial():
-  """
-    Load provincial dataset.
-  """
+  """ Load provincial dataset.  """
   global data_prov
-  data_prov =  pd.read_csv(url_provinces)
-  data_prov.data = pd.to_datetime(data_prov.data)
+  data_prov =  pd.read_csv(url_provinces, parse_dates=['data'], index_col=['data'])
 
-data = pd.read_csv(url)
-data.data = pd.to_datetime(data.data)
+def load():
+  """ Load national dataset. """
+  global data
+  data = pd.read_csv(url, parse_dates=['data'], index_col=['data'])
 
-add_columns(data)
-data_pct = calc_percentages(data)
-statistics = calc_statistics(data)
+def update_data():
+  """ Augment dataset. """
+  global data_pct, statistics
+  add_columns(data)
+  data_pct = calc_percentages(data)
+  statistics = calc_statistics(data)
+
+load()
+update_data()
 
 recap = pd.DataFrame({
     'Valore assoluto': [data.totale_casi.iloc[-1],data.totale_positivi.iloc[-1], data.nuovi_positivi.iloc[-1],
@@ -126,8 +129,24 @@ pivot.columns = pivot.columns.strftime('%d/%m/%Y')
 
 updated_at = data.date.iloc[-1].strftime('%d/%m/%Y')
 
-def daily_stats():
-    """ Daily stats for covid19 in Italy. """
+@click.command()
+@click.option('--region','-r', help='Specify a region.')
+def daily_stats(region):
+    """ 
+    Daily stats for covid19 in Italy. 
+
+    Available regions: Abruzzo, Basilicata, Calabria, Campania, Emilia-Romagna,
+    'Friuli Venezia Giulia', Lazio, Liguria, Lombardia, Marche,
+    Molise, 'P.A. Bolzano', 'P.A. Trento', Piemonte, Puglia,
+    Sardegna, Sicilia, Toscana, Umbria, "Valle d'Aosta", Veneto.
+
+    """
+
+    if (region):
+      load_regional()
+      set_region(region)
+      update_data()
+      print(f"Regione selezionata: {region}\n")
 
     def print_last_day(label, column):
       last = data[column].iloc[-1]
@@ -159,7 +178,7 @@ def daily_stats():
     print_last_day("Ospedalizzati: \t\t", 'totale_ospedalizzati')
     print_last_day("Dimessi: \t\t", 'dimessi_guariti')
     print_last_day("Totale tamponi: \t", 'tamponi')
-    print_last_day("Tamponi odierni: \t", 'tamponi_odierni')
+    print_last_day("Tamponi per giorno: \t", 'tamponi_per_die')
     print_last_day("Totale testati: \t", 'casi_testati')
     print()
 
@@ -325,21 +344,8 @@ def estimate_rt(df, sigma=0.15):
 
   return result
 
-def main(argv):
-  help_str = 'usage: covid.py'
-  locale.setlocale(locale.LC_ALL, 'it_IT.utf-8')
-  try:
-    opts = getopt.getopt(argv, "h:")
-  except getopt.GetoptError:
-      print (help_str)
-      sys.exit(2)
-  for opt in opts:
-    if opt == '-h':
-      print (help_str)
-      sys.exit()
-  daily_stats()
+locale.setlocale(locale.LC_ALL, 'it_IT.utf-8')
 
 if __name__ == "__main__":
-   main(sys.argv[1:])
-
+  daily_stats()
 # vim: tabstop=8 expandtab shiftwidth=2 softtabstop=2
