@@ -6,8 +6,7 @@ Covid19 data analysis for italy.
 
 """
 import locale
-import click
-import sys, getopt
+import click 
 import pandas as pd
 import numpy as np
 from scipy import stats as sps
@@ -74,6 +73,7 @@ def get_region(df, region):
   return df[df.denominazione_regione == region]
 
 def set_region(region):
+  """ replace global data with specific region. """
   global data, data_reg
   data = get_region(data_reg, region)
 
@@ -131,7 +131,8 @@ updated_at = data.date.iloc[-1].strftime('%d/%m/%Y')
 
 @click.command()
 @click.option('--region','-r', help='Specify a region.')
-def daily_stats(region):
+@click.option('--rt', help='Estimate Rt.', is_flag=True)
+def daily_stats(region, rt):
     """ 
     Daily stats for covid19 in Italy. 
 
@@ -188,6 +189,9 @@ def daily_stats(region):
     print_as_pct("Guariti: \t\t", 'guariti')
     print()
 
+    if (rt):
+      calc_rt(region)
+
 def base_seir_model(init_vals, params, t):
     """
     SEIR infection model.
@@ -220,7 +224,13 @@ def base_seir_model(init_vals, params, t):
     return np.stack([S, E, I, R]).T
 
 def seir_model_with_soc_dist(init_vals, params, t):
-    """ rho = social distancing factor."""
+    """ 
+    SEIR infection model with social distancing.
+
+    rho = social distancing factor.
+
+    """
+
     S_0, E_0, I_0, R_0 = init_vals
     S, E, I, R = [S_0], [E_0], [I_0], [R_0]
     alpha, beta, gamma, rho = params
@@ -237,6 +247,7 @@ def seir_model_with_soc_dist(init_vals, params, t):
     return np.stack([S, E, I, R]).T
 
 def prepare_cases(cases, cutoff=25):
+    """ clean cases per day for Rt estimation. """
     new_cases = cases.diff()
 
     smoothed = new_cases.rolling(7,
@@ -252,7 +263,7 @@ def prepare_cases(cases, cutoff=25):
     return original, smoothed
 
 def get_posteriors(sr, sigma=0.15):
-
+    """ get posteriors for bayesian Rt estimation. """
     # (1) Calculate Lambda
     lambd = sr[:-1].values * np.exp(GAMMA * (r_t_range[:, None] - 1))
     # (2) Calculate each day's likelihood
@@ -307,6 +318,7 @@ def get_posteriors(sr, sigma=0.15):
     return posteriors, log_likelihood 
 
 def highest_density_interval(pmf, p=.9, debug=False):
+    """ find highest density interval. """
     # If we pass a DataFrame, just call this recursively on the columns
     if(isinstance(pmf, pd.DataFrame)):
         return pd.DataFrame([highest_density_interval(pmf[col], p=p) for col in pmf],
@@ -343,6 +355,17 @@ def estimate_rt(df, sigma=0.15):
   result = pd.concat([most_likely, hdis], axis=1)
 
   return result
+
+def calc_rt(region):
+  global data
+
+  original, smoothed = prepare_cases(data.totale_casi)
+  posteriors, log_likelihood = get_posteriors(smoothed)
+  hdis = highest_density_interval(posteriors, p=.9)
+  most_likely = posteriors.idxmax().rename('ML')
+  result = pd.concat([most_likely, hdis], axis=1)
+
+  print(result.tail())
 
 locale.setlocale(locale.LC_ALL, 'it_IT.utf-8')
 
