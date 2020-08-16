@@ -10,6 +10,7 @@ import locale
 import numpy as np
 import pandas as pd
 from scipy import stats as sps
+from scipy.interpolate import interp1d
 
 url = "https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-andamento-nazionale/dpc-covid19-ita-andamento-nazionale.csv"
 url_regions = "https://github.com/pcm-dpc/COVID-19/raw/master/dati-regioni/dpc-covid19-ita-regioni.csv"
