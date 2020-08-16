@@ -3,11 +3,30 @@
 Esercizio di dearruginimento con python e pandas
 
 - statistiche odierne con variazione percentuale rispetto al giorno precedente
-- statistiche ultimi 5 giorni
-- grafici andamento con toggle per scala logaritmica
-- grafici a barre delle variazioni percentuali nel tempo
-- regressione polinomiale di totale casi, ospedalizzati e terapia intensiva
+- statistiche ultimi 7 giorni
+- grafici andamento con tab per scala logaritmica
+- grafici delle variazioni percentuali nel tempo
+- analisi predittiva variazione casi con fbprophet
+- stima statistica di Rt e analisi predittiva
 - pubblicazione report statico su github
+
+## Riga di comando
+
+```
+Usage: covid [OPTIONS]
+
+  Daily stats for covid19 in Italy.
+
+  Available regions: Abruzzo, Basilicata, Calabria, Campania, Emilia-
+  Romagna, 'Friuli Venezia Giulia', Lazio, Liguria, Lombardia, Marche,
+  Molise, 'P.A. Bolzano', 'P.A. Trento', Piemonte, Puglia, Sardegna,
+  Sicilia, Toscana, Umbria, "Valle d'Aosta", Veneto.
+
+Options:
+  -r, --region TEXT  Specify a region.
+  --rt               Estimate Rt.
+  --help             Show this message and exit.
+```
 
 ## Stima parametri modello SIR (con covsirphy)
 
