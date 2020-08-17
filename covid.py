@@ -134,8 +134,6 @@ def calc_recap():
 
   return (recap, pivot)
 
-
-
 def update_data():
     """ Augment dataset. """
     global data_pct, statistics, recap, pivot
@@ -143,76 +141,6 @@ def update_data():
     data_pct = calc_percentages(data)
     statistics = calc_statistics(data)
     recap, pivot = calc_recap()
-
-
-load()
-update_data()
-updated_at = data.date.iloc[-1].strftime('%d/%m/%Y')
-
-
-@click.command()
-@click.option('--region', '-r', help='Specify a region.')
-@click.option('--rt', help='Estimate Rt.', is_flag=True)
-def daily_stats(region, rt):
-    """ 
-    Daily stats for covid19 in Italy. 
-
-    Available regions: Abruzzo, Basilicata, Calabria, Campania, Emilia-Romagna,
-    'Friuli Venezia Giulia', Lazio, Liguria, Lombardia, Marche,
-    Molise, 'P.A. Bolzano', 'P.A. Trento', Piemonte, Puglia,
-    Sardegna, Sicilia, Toscana, Umbria, "Valle d'Aosta", Veneto.
-
-    """
-
-    if region:
-        load_regional()
-        set_region(region)
-        update_data()
-        print(f"Regione selezionata: {region}\n")
-
-    def print_last_day(label, column):
-        last = data[column].iloc[-1]
-        pct_var = data_pct[column].iloc[-1]
-        print(label, f'{last:20,.0f}', end='')
-        print(f'{pct_var:+20.2%}')
-
-    def print_as_pct(label, column):
-        pct = data[column].iloc[-1]
-        pct_pct = data_pct[column].iloc[-1]
-        print(label, f'{pct:20.2%}', end='')
-        print(f'{pct_pct:+20.2%}')
-
-    # Data model:
-    # ricoverati_con_sintomi terapia_intensiva totale_ospedalizzati 
-    # isolamento_domiciliare totale_positivi variazione_totale_positivi 
-    # nuovi_positivi dimessi_guariti deceduti totale_casi tamponi casi_testati 
-    # note_it note_en casi_da_sospetto_diagnostico casi_da_screening
-
-    print("Aggiornamento: ", updated_at, "\t\t\tvariazione rispetto a ieri")
-    print("----------------------------------------------------------------------------")
-    print_last_day("Totale casi: \t\t", 'totale_casi')
-    print_last_day("Variaziohe casi: \t", 'nuovi_positivi')
-    print_last_day("Totale positivi: \t", 'totale_positivi')
-    print_last_day("Variazione positivi: \t", 'variazione_totale_positivi')
-    print_last_day("Totale decessi: \t", 'deceduti')
-    print_last_day("Variazione decessi: \t", 'nuovi_decessi')
-    print_last_day("Terapia intensiva: \t", 'terapia_intensiva')
-    print_last_day("Ospedalizzati: \t\t", 'totale_ospedalizzati')
-    print_last_day("Dimessi: \t\t", 'dimessi_guariti')
-    print_last_day("Totale tamponi: \t", 'tamponi')
-    print_last_day("Tamponi per giorno: \t", 'tamponi_per_die')
-    print_last_day("Totale testati: \t", 'casi_testati')
-    print()
-
-    print_as_pct("Morti: \t\t\t", 'mortalita')
-    print_as_pct("Critici: \t\t", 'intensivi')
-    print_as_pct("Ricoverati: \t\t", 'ricoverati')
-    print_as_pct("Guariti: \t\t", 'guariti')
-    print()
-
-    if rt:
-        calc_rt(region)
-
 
 def base_seir_model(init_vals, params, t):
     """
@@ -374,8 +302,8 @@ def estimate_rt(df, sigma=0.15):
     df = data source
     sigma default = 0.15 (national estimate with best log likelihood)
   """
-    original, smoothed = prepare_cases(df.totale_casi)
-    posteriors, log_likelihood = get_posteriors(smoothed, sigma=sigma)
+    _ , smoothed = prepare_cases(df.totale_casi)
+    posteriors, _ = get_posteriors(smoothed, sigma=sigma)
     hdis = highest_density_interval(posteriors, p=.9)
     most_likely = posteriors.idxmax().rename('ML')
     result = pd.concat([most_likely, hdis], axis=1)
@@ -383,11 +311,11 @@ def estimate_rt(df, sigma=0.15):
     return result
 
 
-def calc_rt(region):
+def calc_rt():
     global data
 
-    original, smoothed = prepare_cases(data.totale_casi)
-    posteriors, log_likelihood = get_posteriors(smoothed)
+    _ , smoothed = prepare_cases(data.totale_casi)
+    posteriors, _ = get_posteriors(smoothed)
     hdis = highest_density_interval(posteriors, p=.9)
     most_likely = posteriors.idxmax().rename('ML')
     result = pd.concat([most_likely, hdis], axis=1)
@@ -395,7 +323,73 @@ def calc_rt(region):
     print(result.tail())
 
 
+@click.command()
+@click.option('--region', '-r', help='Specify a region.')
+@click.option('--rt', help='Estimate Rt.', is_flag=True)
+def daily_stats(region=None, rt=False):
+    """ 
+    Daily stats for covid19 in Italy. 
+
+    Available regions: Abruzzo, Basilicata, Calabria, Campania, Emilia-Romagna,
+    'Friuli Venezia Giulia', Lazio, Liguria, Lombardia, Marche,
+    Molise, 'P.A. Bolzano', 'P.A. Trento', Piemonte, Puglia,
+    Sardegna, Sicilia, Toscana, Umbria, "Valle d'Aosta", Veneto.
+
+    """
+
+    if region:
+        load_regional()
+        set_region(region)
+        update_data()
+        print(f"Regione selezionata: {region}\n")
+
+    def print_last_day(label, column):
+        last = data[column].iloc[-1]
+        pct_var = data_pct[column].iloc[-1]
+        print(label, f'{last:20,.0f}', end='')
+        print(f'{pct_var:+20.2%}')
+
+    def print_as_pct(label, column):
+        pct = data[column].iloc[-1]
+        pct_pct = data_pct[column].iloc[-1]
+        print(label, f'{pct:20.2%}', end='')
+        print(f'{pct_pct:+20.2%}')
+
+    # Data model:
+    # ricoverati_con_sintomi terapia_intensiva totale_ospedalizzati 
+    # isolamento_domiciliare totale_positivi variazione_totale_positivi 
+    # nuovi_positivi dimessi_guariti deceduti totale_casi tamponi casi_testati 
+    # note_it note_en casi_da_sospetto_diagnostico casi_da_screening
+
+    print("Aggiornamento: ", updated_at, "\t\t\tvariazione rispetto a ieri")
+    print("----------------------------------------------------------------------------")
+    print_last_day("Totale casi: \t\t", 'totale_casi')
+    print_last_day("Variaziohe casi: \t", 'nuovi_positivi')
+    print_last_day("Totale positivi: \t", 'totale_positivi')
+    print_last_day("Variazione positivi: \t", 'variazione_totale_positivi')
+    print_last_day("Totale decessi: \t", 'deceduti')
+    print_last_day("Variazione decessi: \t", 'nuovi_decessi')
+    print_last_day("Terapia intensiva: \t", 'terapia_intensiva')
+    print_last_day("Ospedalizzati: \t\t", 'totale_ospedalizzati')
+    print_last_day("Dimessi: \t\t", 'dimessi_guariti')
+    print_last_day("Totale tamponi: \t", 'tamponi')
+    print_last_day("Tamponi per giorno: \t", 'tamponi_per_die')
+    print_last_day("Totale testati: \t", 'casi_testati')
+    print()
+
+    print_as_pct("Morti: \t\t\t", 'mortalita')
+    print_as_pct("Critici: \t\t", 'intensivi')
+    print_as_pct("Ricoverati: \t\t", 'ricoverati')
+    print_as_pct("Guariti: \t\t", 'guariti')
+    print()
+
+    if rt:
+        calc_rt()
+
 locale.setlocale(locale.LC_ALL, 'it_IT.utf-8')
+load()
+update_data()
+updated_at = data.date.iloc[-1].strftime('%d/%m/%Y')
 
 if __name__ == "__main__":
     daily_stats()
