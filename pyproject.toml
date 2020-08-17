@@ -5,10 +5,10 @@ description = ""
 authors = ["Andrea Iosio <andrea.iosio@rgigroup.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.6"
+python = "^3.8"
 click = "^7.1"
 pandas = "^1.1"
-matplotlib = "^3.2"
+plotly = "^4.9"
 numpy = "^1.19"
 scipy = "^1.5"
 
