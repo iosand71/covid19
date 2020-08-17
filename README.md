@@ -10,6 +10,10 @@ Esercizio di dearruginimento con python e pandas
 - stima statistica di Rt e analisi predittiva
 - pubblicazione report statico su github
 
+dipendenze gestite con poetry:
+
+https://python-poetry.org/docs/#installation
+
 ## Riga di comando
 
 ```
