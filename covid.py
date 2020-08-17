@@ -96,54 +96,57 @@ def load():
     global data
     data = pd.read_csv(url, parse_dates=['data'], index_col=['data'])
 
+def calc_recap():
+  recap = pd.DataFrame({
+      'Valore assoluto': [data.totale_casi.iloc[-1], data.totale_positivi.iloc[-1], data.nuovi_positivi.iloc[-1],
+                          data.variazione_totale_positivi.iloc[-1], data.deceduti.iloc[-1],
+                          data.nuovi_decessi.iloc[-1], data.terapia_intensiva.iloc[-1],
+                          data.totale_ospedalizzati.iloc[-1], data.dimessi_guariti.iloc[-1],
+                          data.tamponi.iloc[-1], data.casi_testati.iloc[-1], data.mortalita.iloc[-1],
+                          data.intensivi.iloc[-1],
+                          data.ricoverati.iloc[-1], data.guariti.iloc[-1]],
+      'Variazione tot rispetto a ieri': [data.totale_casi.diff().iloc[-1], data.totale_positivi.diff().iloc[-1],
+                                         data.nuovi_positivi.diff().iloc[-1],
+                                         data.variazione_totale_positivi.diff().iloc[-1], data.deceduti.diff().iloc[-1],
+                                         data.nuovi_decessi.diff().iloc[-1], data.terapia_intensiva.diff().iloc[-1],
+                                         data.totale_ospedalizzati.diff().iloc[-1], data.dimessi_guariti.diff().iloc[-1],
+                                         data.tamponi.diff().iloc[-1], data.casi_testati.diff().iloc[-1],
+                                         data.mortalita.diff().iloc[-1],
+                                         data.intensivi.diff().iloc[-1], data.ricoverati.diff().iloc[-1],
+                                         data.guariti.diff().iloc[-1]],
+      'Variazione % rispetto a ieri': [data_pct.totale_casi.iloc[-1], data_pct.totale_positivi.iloc[-1],
+                                       data_pct.nuovi_positivi.iloc[-1],
+                                       data_pct.variazione_totale_positivi.iloc[-1], data_pct.deceduti.iloc[-1],
+                                       data_pct.nuovi_decessi.iloc[-1], data_pct.terapia_intensiva.iloc[-1],
+                                       data_pct.totale_ospedalizzati.iloc[-1], data_pct.dimessi_guariti.iloc[-1],
+                                       data_pct.tamponi.iloc[-1], data_pct.casi_testati.iloc[-1],
+                                       data_pct.mortalita.iloc[-1],
+                                       data_pct.intensivi.iloc[-1], data_pct.ricoverati.iloc[-1],
+                                       data_pct.guariti.iloc[-1]]
+  }, index=['Totale casi', 'Attualmente positivi', 'Variazione totale casi', 'Variazione attualmente positivi',
+            'Totale decessi',
+            'Variazione decessi', 'Terapia intensiva', 'Ospedalizzati', 'Dimessi', 'Totale tamponi', 'Casi testati',
+            'Mortalità', 'Critici', 'Ricoverati', 'Guariti'])
+
+  pivot = pd.pivot_table(statistics, columns=['date'])
+  pivot.sort_values(axis=1, by=['date'], ascending=False, inplace=True)
+  pivot.columns = pivot.columns.strftime('%d/%m/%Y')
+
+  return (recap, pivot)
+
+
 
 def update_data():
     """ Augment dataset. """
-    global data_pct, statistics
+    global data_pct, statistics, recap, pivot
     add_columns(data)
     data_pct = calc_percentages(data)
     statistics = calc_statistics(data)
+    recap, pivot = calc_recap()
 
 
 load()
 update_data()
-
-recap = pd.DataFrame({
-    'Valore assoluto': [data.totale_casi.iloc[-1], data.totale_positivi.iloc[-1], data.nuovi_positivi.iloc[-1],
-                        data.variazione_totale_positivi.iloc[-1], data.deceduti.iloc[-1],
-                        data.nuovi_decessi.iloc[-1], data.terapia_intensiva.iloc[-1],
-                        data.totale_ospedalizzati.iloc[-1], data.dimessi_guariti.iloc[-1],
-                        data.tamponi.iloc[-1], data.casi_testati.iloc[-1], data.mortalita.iloc[-1],
-                        data.intensivi.iloc[-1],
-                        data.ricoverati.iloc[-1], data.guariti.iloc[-1]],
-    'Variazione tot rispetto a ieri': [data.totale_casi.diff().iloc[-1], data.totale_positivi.diff().iloc[-1],
-                                       data.nuovi_positivi.diff().iloc[-1],
-                                       data.variazione_totale_positivi.diff().iloc[-1], data.deceduti.diff().iloc[-1],
-                                       data.nuovi_decessi.diff().iloc[-1], data.terapia_intensiva.diff().iloc[-1],
-                                       data.totale_ospedalizzati.diff().iloc[-1], data.dimessi_guariti.diff().iloc[-1],
-                                       data.tamponi.diff().iloc[-1], data.casi_testati.diff().iloc[-1],
-                                       data.mortalita.diff().iloc[-1],
-                                       data.intensivi.diff().iloc[-1], data.ricoverati.diff().iloc[-1],
-                                       data.guariti.diff().iloc[-1]],
-    'Variazione % rispetto a ieri': [data_pct.totale_casi.iloc[-1], data_pct.totale_positivi.iloc[-1],
-                                     data_pct.nuovi_positivi.iloc[-1],
-                                     data_pct.variazione_totale_positivi.iloc[-1], data_pct.deceduti.iloc[-1],
-                                     data_pct.nuovi_decessi.iloc[-1], data_pct.terapia_intensiva.iloc[-1],
-                                     data_pct.totale_ospedalizzati.iloc[-1], data_pct.dimessi_guariti.iloc[-1],
-                                     data_pct.tamponi.iloc[-1], data_pct.casi_testati.iloc[-1],
-                                     data_pct.mortalita.iloc[-1],
-                                     data_pct.intensivi.iloc[-1], data_pct.ricoverati.iloc[-1],
-                                     data_pct.guariti.iloc[-1]]
-
-}, index=['Totale casi', 'Attualmente positivi', 'Variazione totale casi', 'Variazione attualmente positivi',
-          'Totale decessi',
-          'Variazione decessi', 'Terapia intensiva', 'Ospedalizzati', 'Dimessi', 'Totale tamponi', 'Casi testati',
-          'Mortalità', 'Critici', 'Ricoverati', 'Guariti'])
-
-pivot = pd.pivot_table(statistics, columns=['date'])
-pivot.sort_values(axis=1, by=['date'], ascending=False, inplace=True)
-pivot.columns = pivot.columns.strftime('%d/%m/%Y')
-
 updated_at = data.date.iloc[-1].strftime('%d/%m/%Y')
 
 
