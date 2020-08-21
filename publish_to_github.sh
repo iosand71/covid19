@@ -1,5 +1,8 @@
 #!/bin/bash
-# jupyter nbconvert --ExecutePreprocessor.store_widget_state=True --to notebook --execute covid19-italia.ipynb
+#jupyter nbconvert --to notebook --execute covid19-italia.ipynb
+#jupyter nbconvert --to notebook --execute covid19-piemonte.ipynb
+#jupyter nbconvert --to notebook --execute covid19-lombardia.ipynb
+#jupyter nbconvert --to notebook --execute covid19-internazionale.ipynb
 jupyter nbconvert --template=nbextensions --to=plotlyhtml covid19-italia.ipynb
 jupyter nbconvert --template=nbextensions --to=plotlyhtml covid19-piemonte.ipynb
 jupyter nbconvert --template=nbextensions --to=plotlyhtml covid19-lombardia.ipynb
