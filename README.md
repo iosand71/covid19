@@ -33,7 +33,7 @@ Options:
 
 ### Credits
 
-Il codice Per la stima di Rt  (metodo Bettencout & Ribeiro) il codice è preso da
+Per la stima di Rt  (metodo Bettencout & Ribeiro) il codice è preso da
 questo articolo di Kevin Systrom: http://systrom.com/blog/the-metric-we-need-to-manage-covid-19/
 
 Jupyter Notebook: https://github.com/k-sys/covid-19/blob/master/Realtime%20R0.ipynb
