@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "covid19"
 version = "0.1.0"
-description = ""
+description = "generate reports from covid19 public data"
 authors = ["Andrea Iosio <aiosio@gmail.com>"]
 
 [tool.poetry.dependencies]
@@ -13,6 +13,9 @@ numpy = "^1.19"
 scipy = "^1.5"
 
 [tool.poetry.dev-dependencies]
+jupyter = "^1.0"
+ipywidgets = "^7.5"
+ipython = "^7.16"
 
 [build-system]
 requires = ["poetry>=0.12"]
