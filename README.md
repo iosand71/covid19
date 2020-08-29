@@ -7,7 +7,7 @@ Esercizio di dearruginimento con python e pandas
 - grafici andamento con tab per scala logaritmica e variazioni percentuali
 - analisi predittiva variazione casi con fbprophet
 - stima statistica di Rt e analisi predittiva
-- pubblicazione report statico su github
+- pubblicazione automatica report statici su github
 
 dipendenze gestite con poetry:
 

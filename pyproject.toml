@@ -16,6 +16,7 @@ scipy = "^1.5"
 jupyter = "^1.0"
 ipywidgets = "^7.5"
 ipython = "^7.16"
+nbconvert = "^6.0"
 
 [build-system]
 requires = ["poetry>=0.12"]
