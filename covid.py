@@ -59,6 +59,7 @@ def calc_statistics(df):
 def calc_percentages(df):
     """ Build dataframe with percent changes day to day.  """
     df_pct = df[df.columns.difference(['date', 'stato', 'note', 'note_it', 'note_en',
+                                       'ingressi_terapia_intensiva', 'note_test', 'note_casi',
                                        'casi_da_sospetto_diagnostico', 'casi_da_screening',
                                        'codice_regione', 'denominazione_regione', 'lat', 'long'])].pct_change()
     df_pct.insert(0, 'data', df.date)
