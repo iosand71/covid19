@@ -46,7 +46,7 @@ def calc_statistics(df):
     """ Build cleaned up dataframe with just stats columns.  """
     stats = df.loc[:,
             ['date', 'totale_casi', 'totale_positivi', 'nuovi_positivi', 'variazione_totale_positivi', 'deceduti',
-             'nuovi_decessi', 'terapia_intensiva', 'totale_ospedalizzati', 'dimessi_guariti',
+             'nuovi_decessi', 'terapia_intensiva', 'ingressi_terapia_intensiva','totale_ospedalizzati', 'dimessi_guariti',
              'tamponi', 'casi_testati']]
     stats.insert(0, '% mortalita', df.mortalita)
     stats.insert(0, '% intensivi', df.intensivi)
@@ -59,7 +59,7 @@ def calc_statistics(df):
 def calc_percentages(df):
     """ Build dataframe with percent changes day to day.  """
     df_pct = df[df.columns.difference(['date', 'stato', 'note', 'note_it', 'note_en',
-                                       'ingressi_terapia_intensiva', 'note_test', 'note_casi',
+                                       'note_test', 'note_casi',
                                        'casi_da_sospetto_diagnostico', 'casi_da_screening',
                                        'codice_regione', 'denominazione_regione', 'lat', 'long'])].pct_change()
     df_pct.insert(0, 'data', df.date)
@@ -371,6 +371,7 @@ def daily_stats(region=None, rt=False):
     print_last_day("Totale decessi: \t", 'deceduti')
     print_last_day("Variazione decessi: \t", 'nuovi_decessi')
     print_last_day("Terapia intensiva: \t", 'terapia_intensiva')
+    print_last_day("Ingressi in intensiva: \t", 'ingressi_terapia_intensiva')
     print_last_day("Ospedalizzati: \t\t", 'totale_ospedalizzati')
     print_last_day("Dimessi: \t\t", 'dimessi_guariti')
     print_last_day("Totale tamponi: \t", 'tamponi')
