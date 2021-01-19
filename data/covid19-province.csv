@@ -2843,7 +2843,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-03-17T17:00:00,ITA,08,Emilia-Romagna,038,Ferrara,FE,44.83599085,11.61868934,58,,,,
 2020-03-17T17:00:00,ITA,08,Emilia-Romagna,039,Ravenna,RA,44.41722493,12.19913936,124,,,,
 2020-03-17T17:00:00,ITA,08,Emilia-Romagna,040,Forlì-Cesena,FC,44.22268559,12.04068608,144,,,,
-2020-03-17T17:00:00,ITA,08,Emilia-Romagna,099,Rimini,RN,44.06090087,12.5656295,509,nd-IT-0007,,
+2020-03-17T17:00:00,ITA,08,Emilia-Romagna,099,Rimini,RN,44.06090087,12.5656295,509,nd-IT-0007,,,
 2020-03-17T17:00:00,ITA,08,Emilia-Romagna,984,In fase di definizione/aggiornamento,,,,0,,,,
 2020-03-17T17:00:00,ITA,06,Friuli Venezia Giulia,030,Udine,UD,46.06255516,13.2348383,145,,,,
 2020-03-17T17:00:00,ITA,06,Friuli Venezia Giulia,031,Gorizia,GO,45.94149817,13.62212502,18,,,,
@@ -2964,7 +2964,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-03-18T17:00:00,ITA,15,Campania,065,Salerno,SA,40.67821961,14.759402599999998,65,,,,
 2020-03-18T17:00:00,ITA,15,Campania,983,In fase di definizione/aggiornamento,,,,12,,,,
 2020-03-18T17:00:00,ITA,08,Emilia-Romagna,033,Piacenza,PC,45.05193462,9.692632596000001,1340,,,,
-2020-03-18T17:00:00,ITA,08,Emilia-Romagna,034,Parma,PR,44.80107394,10.32834985,800,nd-IT-0010,,
+2020-03-18T17:00:00,ITA,08,Emilia-Romagna,034,Parma,PR,44.80107394,10.32834985,800,nd-IT-0010,,,
 2020-03-18T17:00:00,ITA,08,Emilia-Romagna,035,Reggio nell'Emilia,RE,44.69735289,10.63007973,414,,,,
 2020-03-18T17:00:00,ITA,08,Emilia-Romagna,036,Modena,MO,44.64600009,10.92615487,575,,,,
 2020-03-18T17:00:00,ITA,08,Emilia-Romagna,037,Bologna,BO,44.49436681,11.341720800000001,395,,,,
@@ -6211,7 +6211,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-04-12T17:00:00,ITA,14,Molise,070,Campobasso,CB,41.55774754,14.65916051,191,,,,
 2020-04-12T17:00:00,ITA,14,Molise,094,Isernia,IS,41.58800826,14.22575407,50,,,,
 2020-04-12T17:00:00,ITA,14,Molise,990,In fase di definizione/aggiornamento,,,,16,,,,
-2020-04-12T17:00:00,ITA,21,P.A. Bolzano,021,Bolzano,BZ,46.49933453,11.35662422,2098,dc-IT-0001,,
+2020-04-12T17:00:00,ITA,21,P.A. Bolzano,021,Bolzano,BZ,46.49933453,11.35662422,2098,dc-IT-0001,,,
 2020-04-12T17:00:00,ITA,21,P.A. Bolzano,981,In fase di definizione/aggiornamento,,,,0,,,,
 2020-04-12T17:00:00,ITA,22,P.A. Trento,022,Trento,TN,46.06893511,11.12123097,3053,,,,
 2020-04-12T17:00:00,ITA,22,P.A. Trento,996,In fase di definizione/aggiornamento,,,,0,,,,
@@ -15667,7 +15667,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-06-25T17:00:00,ITA,07,Liguria,009,Savona,SV,44.30750461,8.481108654,1543,,,,
 2020-06-25T17:00:00,ITA,07,Liguria,010,Genova,GE,44.41149314,8.9326992,5544,,,,
 2020-06-25T17:00:00,ITA,07,Liguria,011,La Spezia,SP,44.10704991,9.8281897,854,,,,
-2020-06-25T17:00:00,ITA,07,Liguria,887,Fuori Regione / Provincia Autonoma,,,,204,di cui 24 Stato estero,,
+2020-06-25T17:00:00,ITA,07,Liguria,887,Fuori Regione / Provincia Autonoma,,,,204,di cui 24 Stato estero,,,
 2020-06-25T17:00:00,ITA,07,Liguria,987,In fase di definizione/aggiornamento,,,,317,,,,
 2020-06-25T17:00:00,ITA,03,Lombardia,012,Varese,VA,45.81701677,8.822868344,3878,,,,
 2020-06-25T17:00:00,ITA,03,Lombardia,013,Como,CO,45.8099912,9.085159546,4078,,,,
@@ -16114,7 +16114,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-06-28T17:00:00,ITA,07,Liguria,009,Savona,SV,44.30750461,8.481108654,1545,,,,
 2020-06-28T17:00:00,ITA,07,Liguria,010,Genova,GE,44.41149314,8.9326992,5556,,,,
 2020-06-28T17:00:00,ITA,07,Liguria,011,La Spezia,SP,44.10704991,9.8281897,855,,,,
-2020-06-28T17:00:00,ITA,07,Liguria,887,Fuori Regione / Provincia Autonoma,,,,246,di cui 66 stato estero,,
+2020-06-28T17:00:00,ITA,07,Liguria,887,Fuori Regione / Provincia Autonoma,,,,246,di cui 66 stato estero,,,
 2020-06-28T17:00:00,ITA,07,Liguria,987,In fase di definizione/aggiornamento,,,,271,,,,
 2020-06-28T17:00:00,ITA,03,Lombardia,012,Varese,VA,45.81701677,8.822868344,3899,,,,
 2020-06-28T17:00:00,ITA,03,Lombardia,013,Como,CO,45.8099912,9.085159546,4093,,,,
@@ -16263,7 +16263,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-06-29T17:00:00,ITA,07,Liguria,009,Savona,SV,44.30750461,8.481108654,1546,,,,
 2020-06-29T17:00:00,ITA,07,Liguria,010,Genova,GE,44.41149314,8.9326992,5559,,,,
 2020-06-29T17:00:00,ITA,07,Liguria,011,La Spezia,SP,44.10704991,9.8281897,858,,,,
-2020-06-29T17:00:00,ITA,07,Liguria,887,Fuori Regione / Provincia Autonoma,,,,246,di cui 66 stato estero,,
+2020-06-29T17:00:00,ITA,07,Liguria,887,Fuori Regione / Provincia Autonoma,,,,246,di cui 66 stato estero,,,
 2020-06-29T17:00:00,ITA,07,Liguria,987,In fase di definizione/aggiornamento,,,,271,,,,
 2020-06-29T17:00:00,ITA,03,Lombardia,012,Varese,VA,45.81701677,8.822868344,3904,,,,
 2020-06-29T17:00:00,ITA,03,Lombardia,013,Como,CO,45.8099912,9.085159546,4093,,,,
@@ -16815,7 +16815,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-07-03T17:00:00,ITA,13,Abruzzo,979,In fase di definizione/aggiornamento,,,,2,,,,
 2020-07-03T17:00:00,ITA,17,Basilicata,076,Potenza,PZ,40.63947052,15.80514834,189,,,,
 2020-07-03T17:00:00,ITA,17,Basilicata,077,Matera,MT,40.66751177,16.59792442,211,,,,
-2020-07-03T17:00:00,ITA,17,Basilicata,880,Fuori Regione / Provincia Autonoma,,,,4,"NEL TOTALE CASI POSITIVI SONO COMPRESI ULTERIORI N. 2 SOGGETTI RISULTATI POSITIVI PER ATTIVITA' DI SCREENING, ASINTOMATICI ED  IN ISOLAMENTO DOMICILIARE, NON RESIDENTI E PROVENIENTI DA STATO ESTERO.  ",,
+2020-07-03T17:00:00,ITA,17,Basilicata,880,Fuori Regione / Provincia Autonoma,,,,4,"NEL TOTALE CASI POSITIVI SONO COMPRESI ULTERIORI N. 2 SOGGETTI RISULTATI POSITIVI PER ATTIVITA' DI SCREENING, ASINTOMATICI ED  IN ISOLAMENTO DOMICILIARE, NON RESIDENTI E PROVENIENTI DA STATO ESTERO.  ",,,
 2020-07-03T17:00:00,ITA,17,Basilicata,980,In fase di definizione/aggiornamento,,,,0,,,,
 2020-07-03T17:00:00,ITA,18,Calabria,078,Cosenza,CS,39.29308681,16.25609692,468,,,,
 2020-07-03T17:00:00,ITA,18,Calabria,079,Catanzaro,CZ,38.90597598,16.59440194,214,,,,
@@ -16964,7 +16964,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-07-04T17:00:00,ITA,13,Abruzzo,979,In fase di definizione/aggiornamento,,,,2,,,,
 2020-07-04T17:00:00,ITA,17,Basilicata,076,Potenza,PZ,40.63947052,15.80514834,189,,,,
 2020-07-04T17:00:00,ITA,17,Basilicata,077,Matera,MT,40.66751177,16.59792442,211,,,,
-2020-07-04T17:00:00,ITA,17,Basilicata,880,Fuori Regione / Provincia Autonoma,,,,4,"NEL TOTALE CASI POSITIVI SONO COMPRESI ULTERIORI N. 2 SOGGETTI RISULTATI POSITIVI PER ATTIVITA' DI SCREENING, ASINTOMATICI ED  IN ISOLAMENTO DOMICILIARE, NON RESIDENTI E PROVENIENTI DA STATO ESTERO.  ",,
+2020-07-04T17:00:00,ITA,17,Basilicata,880,Fuori Regione / Provincia Autonoma,,,,4,"NEL TOTALE CASI POSITIVI SONO COMPRESI ULTERIORI N. 2 SOGGETTI RISULTATI POSITIVI PER ATTIVITA' DI SCREENING, ASINTOMATICI ED  IN ISOLAMENTO DOMICILIARE, NON RESIDENTI E PROVENIENTI DA STATO ESTERO.  ",,,
 2020-07-04T17:00:00,ITA,17,Basilicata,980,In fase di definizione/aggiornamento,,,,0,,,,
 2020-07-04T17:00:00,ITA,18,Calabria,078,Cosenza,CS,39.29308681,16.25609692,469,,,,
 2020-07-04T17:00:00,ITA,18,Calabria,079,Catanzaro,CZ,38.90597598,16.59440194,214,,,,
@@ -17113,7 +17113,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-07-05T17:00:00,ITA,13,Abruzzo,979,In fase di definizione/aggiornamento,,,,2,,,,
 2020-07-05T17:00:00,ITA,17,Basilicata,076,Potenza,PZ,40.63947052,15.80514834,189,,,,
 2020-07-05T17:00:00,ITA,17,Basilicata,077,Matera,MT,40.66751177,16.59792442,211,,,,
-2020-07-05T17:00:00,ITA,17,Basilicata,880,Fuori Regione / Provincia Autonoma,,,,4,"NEL TOTALE CASI POSITIVI SONO COMPRESI ULTERIORI N. 2 SOGGETTI RISULTATI POSITIVI PER ATTIVITA' DI SCREENING, ASINTOMATICI ED  IN ISOLAMENTO DOMICILIARE, NON RESIDENTI E PROVENIENTI DA STATO ESTERO.  ",,
+2020-07-05T17:00:00,ITA,17,Basilicata,880,Fuori Regione / Provincia Autonoma,,,,4,"NEL TOTALE CASI POSITIVI SONO COMPRESI ULTERIORI N. 2 SOGGETTI RISULTATI POSITIVI PER ATTIVITA' DI SCREENING, ASINTOMATICI ED  IN ISOLAMENTO DOMICILIARE, NON RESIDENTI E PROVENIENTI DA STATO ESTERO.  ",,,
 2020-07-05T17:00:00,ITA,17,Basilicata,980,In fase di definizione/aggiornamento,,,,0,,,,
 2020-07-05T17:00:00,ITA,18,Calabria,078,Cosenza,CS,39.29308681,16.25609692,469,,,,
 2020-07-05T17:00:00,ITA,18,Calabria,079,Catanzaro,CZ,38.90597598,16.59440194,214,,,,
@@ -17262,7 +17262,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-07-06T17:00:00,ITA,13,Abruzzo,979,In fase di definizione/aggiornamento,,,,3,,,,
 2020-07-06T17:00:00,ITA,17,Basilicata,076,Potenza,PZ,40.63947052,15.80514834,189,,,,
 2020-07-06T17:00:00,ITA,17,Basilicata,077,Matera,MT,40.66751177,16.59792442,211,,,,
-2020-07-06T17:00:00,ITA,17,Basilicata,880,Fuori Regione / Provincia Autonoma,,,,4,"NEL TOTALE CASI POSITIVI SONO COMPRESI ULTERIORI N. 2 SOGGETTI RISULTATI POSITIVI PER ATTIVITA' DI SCREENING, ASINTOMATICI ED  IN ISOLAMENTO DOMICILIARE, NON RESIDENTI E PROVENIENTI DA STATO ESTERO.  ",,
+2020-07-06T17:00:00,ITA,17,Basilicata,880,Fuori Regione / Provincia Autonoma,,,,4,"NEL TOTALE CASI POSITIVI SONO COMPRESI ULTERIORI N. 2 SOGGETTI RISULTATI POSITIVI PER ATTIVITA' DI SCREENING, ASINTOMATICI ED  IN ISOLAMENTO DOMICILIARE, NON RESIDENTI E PROVENIENTI DA STATO ESTERO.  ",,,
 2020-07-06T17:00:00,ITA,17,Basilicata,980,In fase di definizione/aggiornamento,,,,0,,,,
 2020-07-06T17:00:00,ITA,18,Calabria,078,Cosenza,CS,39.29308681,16.25609692,469,,,,
 2020-07-06T17:00:00,ITA,18,Calabria,079,Catanzaro,CZ,38.90597598,16.59440194,214,,,,
@@ -17411,7 +17411,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-07-07T17:00:00,ITA,13,Abruzzo,979,In fase di definizione/aggiornamento,,,,3,,,,
 2020-07-07T17:00:00,ITA,17,Basilicata,076,Potenza,PZ,40.63947052,15.80514834,189,,,,
 2020-07-07T17:00:00,ITA,17,Basilicata,077,Matera,MT,40.66751177,16.59792442,211,,,,
-2020-07-07T17:00:00,ITA,17,Basilicata,880,Fuori Regione / Provincia Autonoma,,,,4,"NEL TOTALE CASI POSITIVI SONO COMPRESI ULTERIORI N. 2 SOGGETTI RISULTATI POSITIVI PER ATTIVITA' DI SCREENING, ASINTOMATICI ED  IN ISOLAMENTO DOMICILIARE, NON RESIDENTI E PROVENIENTI DA STATO ESTERO.  ",,
+2020-07-07T17:00:00,ITA,17,Basilicata,880,Fuori Regione / Provincia Autonoma,,,,4,"NEL TOTALE CASI POSITIVI SONO COMPRESI ULTERIORI N. 2 SOGGETTI RISULTATI POSITIVI PER ATTIVITA' DI SCREENING, ASINTOMATICI ED  IN ISOLAMENTO DOMICILIARE, NON RESIDENTI E PROVENIENTI DA STATO ESTERO.  ",,,
 2020-07-07T17:00:00,ITA,17,Basilicata,980,In fase di definizione/aggiornamento,,,,0,,,,
 2020-07-07T17:00:00,ITA,18,Calabria,078,Cosenza,CS,39.29308681,16.25609692,469,,,,
 2020-07-07T17:00:00,ITA,18,Calabria,079,Catanzaro,CZ,38.90597598,16.59440194,214,,,,
@@ -17709,7 +17709,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-07-09T17:00:00,ITA,13,Abruzzo,979,In fase di definizione/aggiornamento,,,,3,,,,
 2020-07-09T17:00:00,ITA,17,Basilicata,076,Potenza,PZ,40.63947052,15.80514834,190,,,,
 2020-07-09T17:00:00,ITA,17,Basilicata,077,Matera,MT,40.66751177,16.59792442,211,,,,
-2020-07-09T17:00:00,ITA,17,Basilicata,880,Fuori Regione / Provincia Autonoma,,,,4,"NEL TOTALE CASI POSITIVI SONO COMPRESI N. 2 SOGGETTI RISULTATI POSITIVI PER ATTIVITA' DI SCREENING, ASINTOMATICI ED  IN ISOLAMENTO DOMICILIARE, NON RESIDENTI E PROVENIENTI DA STATO ESTERO.  ",,
+2020-07-09T17:00:00,ITA,17,Basilicata,880,Fuori Regione / Provincia Autonoma,,,,4,"NEL TOTALE CASI POSITIVI SONO COMPRESI N. 2 SOGGETTI RISULTATI POSITIVI PER ATTIVITA' DI SCREENING, ASINTOMATICI ED  IN ISOLAMENTO DOMICILIARE, NON RESIDENTI E PROVENIENTI DA STATO ESTERO.  ",,,
 2020-07-09T17:00:00,ITA,17,Basilicata,980,In fase di definizione/aggiornamento,,,,0,,,,
 2020-07-09T17:00:00,ITA,18,Calabria,078,Cosenza,CS,39.29308681,16.25609692,469,,,,
 2020-07-09T17:00:00,ITA,18,Calabria,079,Catanzaro,CZ,38.90597598,16.59440194,214,,,,
@@ -17727,7 +17727,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-07-09T17:00:00,ITA,15,Campania,983,In fase di definizione/aggiornamento,,,,47,,,,
 2020-07-09T17:00:00,ITA,08,Emilia-Romagna,033,Piacenza,PC,45.05193462,9.692632596000001,4445,,,,
 2020-07-09T17:00:00,ITA,08,Emilia-Romagna,034,Parma,PR,44.80107394,10.32834985,3699,,,,
-2020-07-09T17:00:00,ITA,08,Emilia-Romagna,035,Reggio nell'Emilia,RE,44.69735289,10.63007973,4919, ,,
+2020-07-09T17:00:00,ITA,08,Emilia-Romagna,035,Reggio nell'Emilia,RE,44.69735289,10.63007973,4919, ,,,
 2020-07-09T17:00:00,ITA,08,Emilia-Romagna,036,Modena,MO,44.64600009,10.92615487,3902,,,,
 2020-07-09T17:00:00,ITA,08,Emilia-Romagna,037,Bologna,BO,44.49436681,11.341720800000001,5335,,,,
 2020-07-09T17:00:00,ITA,08,Emilia-Romagna,038,Ferrara,FE,44.83599085,11.61868934,1049,,,,
@@ -17858,7 +17858,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-07-10T17:00:00,ITA,13,Abruzzo,979,In fase di definizione/aggiornamento,,,,3,,,,
 2020-07-10T17:00:00,ITA,17,Basilicata,076,Potenza,PZ,40.63947052,15.80514834,190,,,,
 2020-07-10T17:00:00,ITA,17,Basilicata,077,Matera,MT,40.66751177,16.59792442,211,,,,
-2020-07-10T17:00:00,ITA,17,Basilicata,880,Fuori Regione / Provincia Autonoma,,,,4,"NEL TOTALE CASI POSITIVI SONO COMPRESI N. 2 SOGGETTI RISULTATI POSITIVI PER ATTIVITA' DI SCREENING, PROVENIENTI DA STATO ESTERO.  ",,
+2020-07-10T17:00:00,ITA,17,Basilicata,880,Fuori Regione / Provincia Autonoma,,,,4,"NEL TOTALE CASI POSITIVI SONO COMPRESI N. 2 SOGGETTI RISULTATI POSITIVI PER ATTIVITA' DI SCREENING, PROVENIENTI DA STATO ESTERO.  ",,,
 2020-07-10T17:00:00,ITA,17,Basilicata,980,In fase di definizione/aggiornamento,,,,0,,,,
 2020-07-10T17:00:00,ITA,18,Calabria,078,Cosenza,CS,39.29308681,16.25609692,469,,,,
 2020-07-10T17:00:00,ITA,18,Calabria,079,Catanzaro,CZ,38.90597598,16.59440194,214,,,,
@@ -18005,9 +18005,9 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-07-11T17:00:00,ITA,13,Abruzzo,069,Chieti,CH,42.35103167,14.16754574,827,,,,
 2020-07-11T17:00:00,ITA,13,Abruzzo,879,Fuori Regione / Provincia Autonoma,,,,26,,,,
 2020-07-11T17:00:00,ITA,13,Abruzzo,979,In fase di definizione/aggiornamento,,,,3,,,,
-2020-07-11T17:00:00,ITA,17,Basilicata,076,Potenza,PZ,40.63947052,15.80514834,191,N. 1 NUOVO CASO POSITIVO DA SCREENING DI SOGGETTO RESIDENTE IN BASILICATA MA PROVENIENTE DA STATO ESTERO OVE SOGGIORNA PER MOTIVI DI LAVORO (KAZAKISTAN),,
+2020-07-11T17:00:00,ITA,17,Basilicata,076,Potenza,PZ,40.63947052,15.80514834,191,N. 1 NUOVO CASO POSITIVO DA SCREENING DI SOGGETTO RESIDENTE IN BASILICATA MA PROVENIENTE DA STATO ESTERO OVE SOGGIORNA PER MOTIVI DI LAVORO (KAZAKISTAN),,,
 2020-07-11T17:00:00,ITA,17,Basilicata,077,Matera,MT,40.66751177,16.59792442,211,,,,
-2020-07-11T17:00:00,ITA,17,Basilicata,880,Fuori Regione / Provincia Autonoma,,,,4,"NEL TOTALE CASI POSITIVI DA ATTIVITA' DI SCREENING SONO COMPRESI N. 2 SOGGETTI RISULTATI POSITIVI, PROVENIENTI DA STATO ESTERO (MOLDAVIA) E NON RESIDENTI IN BASILICATA",,
+2020-07-11T17:00:00,ITA,17,Basilicata,880,Fuori Regione / Provincia Autonoma,,,,4,"NEL TOTALE CASI POSITIVI DA ATTIVITA' DI SCREENING SONO COMPRESI N. 2 SOGGETTI RISULTATI POSITIVI, PROVENIENTI DA STATO ESTERO (MOLDAVIA) E NON RESIDENTI IN BASILICATA",,,
 2020-07-11T17:00:00,ITA,17,Basilicata,980,In fase di definizione/aggiornamento,,,,0,,,,
 2020-07-11T17:00:00,ITA,18,Calabria,078,Cosenza,CS,39.29308681,16.25609692,469,,,,
 2020-07-11T17:00:00,ITA,18,Calabria,079,Catanzaro,CZ,38.90597598,16.59440194,214,,,,
@@ -18163,7 +18163,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-07-12T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,297,,,,
 2020-07-12T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,121,,,,
 2020-07-12T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,86,,,,
-2020-07-12T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,28,"Dallo screening condotto su 70 migranti sbarcati ieri a Roccella Ionica sono stati intercettati 26 soggetti positivi dal  laboratorio dell'ASP di Reggio Calabria;  in strutture dedicate,  appositamente individuate dalla Prefettura.",,
+2020-07-12T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,28,"Dallo screening condotto su 70 migranti sbarcati ieri a Roccella Ionica sono stati intercettati 26 soggetti positivi dal  laboratorio dell'ASP di Reggio Calabria;  in strutture dedicate,  appositamente individuate dalla Prefettura.",,,
 2020-07-12T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-07-12T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,581,,,,
 2020-07-12T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,209,,,,
@@ -18312,7 +18312,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-07-13T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,297,,,,
 2020-07-13T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,121,,,,
 2020-07-13T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,86,,,,
-2020-07-13T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,28,allo screening condotto su 70 migranti sbarcati ieri a Roccella Ionica il laboratorio dell'ASP di Reggio Calabria ne ha intercettati 26,,
+2020-07-13T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,28,allo screening condotto su 70 migranti sbarcati ieri a Roccella Ionica il laboratorio dell'ASP di Reggio Calabria ne ha intercettati 26,,,
 2020-07-13T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-07-13T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,584,,,,
 2020-07-13T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,209,,,,
@@ -18461,7 +18461,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-07-14T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,297,,,,
 2020-07-14T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,121,,,,
 2020-07-14T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,86,,,,
-2020-07-14T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,28, Dallo screening condotto su 70 migranti sbarcati ieri a Roccella Ionica il laboratorio dell'ASP di Reggio Calabria ne ha intercettati 26,,
+2020-07-14T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,28, Dallo screening condotto su 70 migranti sbarcati ieri a Roccella Ionica il laboratorio dell'ASP di Reggio Calabria ne ha intercettati 26,,,
 2020-07-14T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-07-14T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,584,,,,
 2020-07-14T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,209,,,,
@@ -18610,7 +18610,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-07-15T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,297,,,,
 2020-07-15T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,121,,,,
 2020-07-15T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,86,,,,
-2020-07-15T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,28," Dei  54 soggetti positivi  in isolamento domiciliare 13 sono stati trasferiti  a Roma, in apposita struttura ( Ospedale Celio) ",,
+2020-07-15T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,28," Dei  54 soggetti positivi  in isolamento domiciliare 13 sono stati trasferiti  a Roma, in apposita struttura ( Ospedale Celio) ",,,
 2020-07-15T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-07-15T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,584,,,,
 2020-07-15T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,209,,,,
@@ -18908,7 +18908,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-07-17T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,297,,,,
 2020-07-17T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,121,,,,
 2020-07-17T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,87,,,,
-2020-07-17T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,31,"Dei cinque positivi di oggi tre casi sono riconducibili allo sbarco di Roccella Jonica, mentre gli altri due sono rientri da Stato estero.",,
+2020-07-17T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,31,"Dei cinque positivi di oggi tre casi sono riconducibili allo sbarco di Roccella Jonica, mentre gli altri due sono rientri da Stato estero.",,,
 2020-07-17T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-07-17T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,586,,,,
 2020-07-17T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,209,,,,
@@ -19263,7 +19263,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-07-19T17:00:00,ITA,11,Marche,042,Ancona,AN,43.61675973,13.5188753,1880,,,,
 2020-07-19T17:00:00,ITA,11,Marche,043,Macerata,MC,43.30023926,13.45307182,1158,,,,
 2020-07-19T17:00:00,ITA,11,Marche,044,Ascoli Piceno,AP,42.85322304,13.57691127,294,,,,
-2020-07-19T17:00:00,ITA,11,Marche,109,Fermo,FM,43.16058534,13.71839535,474,n.1 caso di ieri risulta essere negativo,,
+2020-07-19T17:00:00,ITA,11,Marche,109,Fermo,FM,43.16058534,13.71839535,474,n.1 caso di ieri risulta essere negativo,,,
 2020-07-19T17:00:00,ITA,11,Marche,889,Fuori Regione / Provincia Autonoma,,,,237,,,,
 2020-07-19T17:00:00,ITA,11,Marche,989,In fase di definizione/aggiornamento,,,,0,,,,
 2020-07-19T17:00:00,ITA,14,Molise,070,Campobasso,CB,41.55774754,14.65916051,364,,,,
@@ -19489,9 +19489,9 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-07-20T17:00:00,ITA,05,Veneto,029,Rovigo,RO,45.07107289,11.79007,452,,,,
 2020-07-20T17:00:00,ITA,05,Veneto,899,Fuori Regione / Provincia Autonoma,,,,337,,,,
 2020-07-20T17:00:00,ITA,05,Veneto,999,In fase di definizione/aggiornamento,,,,30,,,,
-2020-07-21T17:00:00,ITA,13,Abruzzo,066,L'Aquila,AQ,42.35122196,13.39843823,247,E' stato aggiunto 1 positivo non comunicato il 17/07,,
+2020-07-21T17:00:00,ITA,13,Abruzzo,066,L'Aquila,AQ,42.35122196,13.39843823,247,E' stato aggiunto 1 positivo non comunicato il 17/07,,,
 2020-07-21T17:00:00,ITA,13,Abruzzo,067,Teramo,TE,42.6589177,13.70439971,635,,,,
-2020-07-21T17:00:00,ITA,13,Abruzzo,068,Pescara,PE,42.46458398,14.21364822,1600,E' stato sottratto 1 positivo erroneamente comunicato il 19/07,,
+2020-07-21T17:00:00,ITA,13,Abruzzo,068,Pescara,PE,42.46458398,14.21364822,1600,E' stato sottratto 1 positivo erroneamente comunicato il 19/07,,,
 2020-07-21T17:00:00,ITA,13,Abruzzo,069,Chieti,CH,42.35103167,14.16754574,834,,,,
 2020-07-21T17:00:00,ITA,13,Abruzzo,879,Fuori Regione / Provincia Autonoma,,,,26,,,,
 2020-07-21T17:00:00,ITA,13,Abruzzo,979,In fase di definizione/aggiornamento,,,,2,,,,
@@ -19951,7 +19951,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-07-24T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,298,,,,
 2020-07-24T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,121,,,,
 2020-07-24T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,87,,,,
-2020-07-24T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,35,  Il caso rilevato al Laboratorio  dell Asp di Reggio Calabria è riconducibile allo sbarco di Roccella Jonica dell'11/7/2020. ,,
+2020-07-24T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,35,  Il caso rilevato al Laboratorio  dell Asp di Reggio Calabria è riconducibile allo sbarco di Roccella Jonica dell'11/7/2020. ,,,
 2020-07-24T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-07-24T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,603,,,,
 2020-07-24T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,209,,,,
@@ -20547,7 +20547,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-07-28T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,298,,,,
 2020-07-28T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,121,,,,
 2020-07-28T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,88,,,,
-2020-07-28T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,40,L'incremento dei contagi è da correlarsi a 5 positivi rilevati tra i migranti sbarcati a  Crotone  il  25 luglio.,,
+2020-07-28T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,40,L'incremento dei contagi è da correlarsi a 5 positivi rilevati tra i migranti sbarcati a  Crotone  il  25 luglio.,,,
 2020-07-28T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-07-28T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,613,,,,
 2020-07-28T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,209,,,,
@@ -20611,7 +20611,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-07-28T17:00:00,ITA,14,Molise,094,Isernia,IS,41.58800826,14.22575407,65,,,,
 2020-07-28T17:00:00,ITA,14,Molise,890,Fuori Regione / Provincia Autonoma,,,,20,,,,
 2020-07-28T17:00:00,ITA,14,Molise,990,In fase di definizione/aggiornamento,,,,0,,,,
-2020-07-28T17:00:00,ITA,04,P.A. Bolzano,021,Bolzano,BZ,46.49933453,11.35662422,2692,"Positivi: 2.692 (oggi + 2 nuovi casi di nuovi positivi rispetto al giorno precedente ( 1 Silandro e 1 Merano, a cui vanno sottratti -10 casi di persone che a seguito di un controllo dei dati sono state conteggiate 2 volte ); quindi il dato dei positivi aggiornato da oggi è 2.700 + 2 -10 = 2.692 ",,
+2020-07-28T17:00:00,ITA,04,P.A. Bolzano,021,Bolzano,BZ,46.49933453,11.35662422,2692,"Positivi: 2.692 (oggi + 2 nuovi casi di nuovi positivi rispetto al giorno precedente ( 1 Silandro e 1 Merano, a cui vanno sottratti -10 casi di persone che a seguito di un controllo dei dati sono state conteggiate 2 volte ); quindi il dato dei positivi aggiornato da oggi è 2.700 + 2 -10 = 2.692 ",,,
 2020-07-28T17:00:00,ITA,04,P.A. Bolzano,881,Fuori Regione / Provincia Autonoma,,,,0,,,,
 2020-07-28T17:00:00,ITA,04,P.A. Bolzano,981,In fase di definizione/aggiornamento,,,,0,,,,
 2020-07-28T17:00:00,ITA,04,P.A. Trento,022,Trento,TN,46.06893511,11.12123097,4966,,,,
@@ -20720,7 +20720,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-07-29T17:00:00,ITA,06,Friuli Venezia Giulia,031,Gorizia,GO,45.94149817,13.62212502,225,,,,
 2020-07-29T17:00:00,ITA,06,Friuli Venezia Giulia,032,Trieste,TS,45.6494354,13.76813649,1412,,,,
 2020-07-29T17:00:00,ITA,06,Friuli Venezia Giulia,093,Pordenone,PN,45.95443546,12.66002909,723,,,,
-2020-07-29T17:00:00,ITA,06,Friuli Venezia Giulia,885,Fuori Regione / Provincia Autonoma,,,,1,AUSTRIA,,
+2020-07-29T17:00:00,ITA,06,Friuli Venezia Giulia,885,Fuori Regione / Provincia Autonoma,,,,1,AUSTRIA,,,
 2020-07-29T17:00:00,ITA,06,Friuli Venezia Giulia,985,In fase di definizione/aggiornamento,,,,0,,,,
 2020-07-29T17:00:00,ITA,12,Lazio,056,Viterbo,VT,42.4173828,12.10473416,462,,,,
 2020-07-29T17:00:00,ITA,12,Lazio,057,Rieti,RI,42.40488444,12.86205939,421,,,,
@@ -20760,7 +20760,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-07-29T17:00:00,ITA,14,Molise,094,Isernia,IS,41.58800826,14.22575407,65,,,,
 2020-07-29T17:00:00,ITA,14,Molise,890,Fuori Regione / Provincia Autonoma,,,,20,,,,
 2020-07-29T17:00:00,ITA,14,Molise,990,In fase di definizione/aggiornamento,,,,0,,,,
-2020-07-29T17:00:00,ITA,04,P.A. Bolzano,021,Bolzano,BZ,46.49933453,11.35662422,2696,"OGGI :  + 5 nuovi casi di nuovi positivi rispetto al giorno precedente ( 2 Bronzolo, 1 Merano, 1 Sesto e 1 Comune Sconosciuto) a cui vanno sottratti -1 caso di persona che a seguito di un controllo dei dati è stata conteggiata 2 volte ); quindi il dato dei positivi aggiornato ad oggi è 2.692 + 5 -1 = 2.696.",,
+2020-07-29T17:00:00,ITA,04,P.A. Bolzano,021,Bolzano,BZ,46.49933453,11.35662422,2696,"OGGI :  + 5 nuovi casi di nuovi positivi rispetto al giorno precedente ( 2 Bronzolo, 1 Merano, 1 Sesto e 1 Comune Sconosciuto) a cui vanno sottratti -1 caso di persona che a seguito di un controllo dei dati è stata conteggiata 2 volte ); quindi il dato dei positivi aggiornato ad oggi è 2.692 + 5 -1 = 2.696.",,,
 2020-07-29T17:00:00,ITA,04,P.A. Bolzano,881,Fuori Regione / Provincia Autonoma,,,,0,,,,
 2020-07-29T17:00:00,ITA,04,P.A. Bolzano,981,In fase di definizione/aggiornamento,,,,0,,,,
 2020-07-29T17:00:00,ITA,04,P.A. Trento,022,Trento,TN,46.06893511,11.12123097,4970,,,,
@@ -20845,7 +20845,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-07-30T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,298,,,,
 2020-07-30T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,121,,,,
 2020-07-30T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,88,,,,
-2020-07-30T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,46,"Dei cinque  casi  rilevati al Laboratorio  dell Asp di Reggio Calabria quattro  sono riconducibili allo sbarco di Roccella Jonica dell'11/7/2020 e uno è provienente da Stato Estero.  Il caso rilevato all'AOU Mater Domini è da screening pre ricovero per IMA , proveniente da altra Regione e ricoverato in UTI per esigenze di monitoraggio della patologia cardiaca",,
+2020-07-30T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,46,"Dei cinque  casi  rilevati al Laboratorio  dell Asp di Reggio Calabria quattro  sono riconducibili allo sbarco di Roccella Jonica dell'11/7/2020 e uno è provienente da Stato Estero.  Il caso rilevato all'AOU Mater Domini è da screening pre ricovero per IMA , proveniente da altra Regione e ricoverato in UTI per esigenze di monitoraggio della patologia cardiaca",,,
 2020-07-30T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-07-30T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,614,,,,
 2020-07-30T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,209,,,,
@@ -20994,7 +20994,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-07-31T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,298,,,,
 2020-07-31T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,121,,,,
 2020-07-31T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,91,,,,
-2020-07-31T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,47,Dallo screening condotto su 63  migranti sbarcati ieri a Ferruzzano il laboratorio dell'ASP di Reggio Calabria  ha intercettao un  positivo.,,
+2020-07-31T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,47,Dallo screening condotto su 63  migranti sbarcati ieri a Ferruzzano il laboratorio dell'ASP di Reggio Calabria  ha intercettao un  positivo.,,,
 2020-07-31T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-07-31T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,614,,,,
 2020-07-31T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,209,,,,
@@ -21888,7 +21888,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-08-06T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,299,,,,
 2020-08-06T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,121,,,,
 2020-08-06T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,91,,,,
-2020-08-06T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,55,  Il caso positivo rilevato dal laboratorio dell'AO di Cosenza  è un turista proveniente dalla Campania .  Il caso positivo di oggi rilevato dall'AO di Reggio Calabria appartiene allo sbarco di Roccella del 11/07,,
+2020-08-06T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,55,  Il caso positivo rilevato dal laboratorio dell'AO di Cosenza  è un turista proveniente dalla Campania .  Il caso positivo di oggi rilevato dall'AO di Reggio Calabria appartiene allo sbarco di Roccella del 11/07,,,
 2020-08-06T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-08-06T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,622,,,,
 2020-08-06T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,211,,,,
@@ -22037,7 +22037,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-08-07T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,300,,,,
 2020-08-07T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,122,,,,
 2020-08-07T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,91,,,,
-2020-08-07T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,59,Sei  dei sette casi confermati provengono da Fuori regione/Stato estero ,,
+2020-08-07T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,59,Sei  dei sette casi confermati provengono da Fuori regione/Stato estero ,,,
 2020-08-07T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-08-07T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,625,,,,
 2020-08-07T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,211,,,,
@@ -22186,7 +22186,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-08-08T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,302,,,,
 2020-08-08T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,122,,,,
 2020-08-08T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,91,,,,
-2020-08-08T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,61,Dei quattro positivi di oggi due sono soggetti di rientro da Stato Estero e due da Fuori Regione. ,,
+2020-08-08T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,61,Dei quattro positivi di oggi due sono soggetti di rientro da Stato Estero e due da Fuori Regione. ,,,
 2020-08-08T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-08-08T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,627,,,,
 2020-08-08T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,211,,,,
@@ -22633,7 +22633,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-08-11T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,311,,,,
 2020-08-11T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,122,,,,
 2020-08-11T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,91,,,,
-2020-08-11T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,63, Gli otto casi rilevati a Reggio Calabria  sono contatti del caso isolato ieri e riconducibili ad un'unico focolaio derivato da una festa di giovani. I due casi di Crotone sono del focolaio del CARA. Il caso di Cosenza è riconducibile  ai giovani rientrati da Corfù. ,,
+2020-08-11T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,63, Gli otto casi rilevati a Reggio Calabria  sono contatti del caso isolato ieri e riconducibili ad un'unico focolaio derivato da una festa di giovani. I due casi di Crotone sono del focolaio del CARA. Il caso di Cosenza è riconducibile  ai giovani rientrati da Corfù. ,,,
 2020-08-11T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-08-11T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,637,,,,
 2020-08-11T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,211,,,,
@@ -22782,7 +22782,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-08-12T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,314,,,,
 2020-08-12T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,122,,,,
 2020-08-12T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,91,,,,
-2020-08-12T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,63,Il caso positivo rilevato dal laboratorio dell'AO di Cosenza è  da contact tracing del focolaio di Corfù.  I tre casi positivi rilevati dal laboratorio  dell'Asp di Reggio Calabria sono riconducibili al focolaio derivato da una festa di giovani.,,
+2020-08-12T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,63,Il caso positivo rilevato dal laboratorio dell'AO di Cosenza è  da contact tracing del focolaio di Corfù.  I tre casi positivi rilevati dal laboratorio  dell'Asp di Reggio Calabria sono riconducibili al focolaio derivato da una festa di giovani.,,,
 2020-08-12T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-08-12T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,639,,,,
 2020-08-12T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,212,,,,
@@ -23319,9 +23319,9 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-08-15T17:00:00,ITA,16,Puglia,992,In fase di definizione/aggiornamento,,,,0,,,,
 2020-08-15T17:00:00,ITA,20,Sardegna,090,Sassari,SS,40.72667657,8.559667131,901,,,,
 2020-08-15T17:00:00,ITA,20,Sardegna,091,Nuoro,NU,40.32318834,9.330296393,85,,,,
-2020-08-15T17:00:00,ITA,20,Sardegna,092,Cagliari,CA,39.21531192,9.110616306,277,Si inserisce il nuovo caso e si riducedi una unità erroneamente assegnata nella giornata di ieri,,
+2020-08-15T17:00:00,ITA,20,Sardegna,092,Cagliari,CA,39.21531192,9.110616306,277,Si inserisce il nuovo caso e si riducedi una unità erroneamente assegnata nella giornata di ieri,,,
 2020-08-15T17:00:00,ITA,20,Sardegna,095,Oristano,OR,39.90381075,8.591183151000001,62,,,,
-2020-08-15T17:00:00,ITA,20,Sardegna,111,Sud Sardegna,SU,39.16641462,8.526242676,164,"ai 4 nuovi casi si aggiunge il caso erroneamente caricato nella giornata di ieri, a Cagliari",,
+2020-08-15T17:00:00,ITA,20,Sardegna,111,Sud Sardegna,SU,39.16641462,8.526242676,164,"ai 4 nuovi casi si aggiunge il caso erroneamente caricato nella giornata di ieri, a Cagliari",,,
 2020-08-15T17:00:00,ITA,20,Sardegna,893,Fuori Regione / Provincia Autonoma,,,,0,,,,
 2020-08-15T17:00:00,ITA,20,Sardegna,993,In fase di definizione/aggiornamento,,,,0,,,,
 2020-08-15T17:00:00,ITA,19,Sicilia,081,Trapani,TP,38.01850065,12.51365684,142,,,,
@@ -23667,7 +23667,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-08-18T17:00:00,ITA,13,Abruzzo,069,Chieti,CH,42.35103167,14.16754574,886,,,,
 2020-08-18T17:00:00,ITA,13,Abruzzo,879,Fuori Regione / Provincia Autonoma,,,,28,,,,
 2020-08-18T17:00:00,ITA,13,Abruzzo,979,In fase di definizione/aggiornamento,,,,1,,,,
-2020-08-18T17:00:00,ITA,17,Basilicata,076,Potenza,PZ,40.63947052,15.80514834,197,AI N. 199 CASI POSITIVI DELLA PROVINCIA DI POTENZA AL 17/08/2020  DEVONO ESSERE DETRATTI N. 2 CASI FALSI POSITIVI DICHIARATI IN DATA 15/08/2020.,,
+2020-08-18T17:00:00,ITA,17,Basilicata,076,Potenza,PZ,40.63947052,15.80514834,197,AI N. 199 CASI POSITIVI DELLA PROVINCIA DI POTENZA AL 17/08/2020  DEVONO ESSERE DETRATTI N. 2 CASI FALSI POSITIVI DICHIARATI IN DATA 15/08/2020.,,,
 2020-08-18T17:00:00,ITA,17,Basilicata,077,Matera,MT,40.66751177,16.59792442,217,,,,
 2020-08-18T17:00:00,ITA,17,Basilicata,880,Fuori Regione / Provincia Autonoma,,,,77,,,,
 2020-08-18T17:00:00,ITA,17,Basilicata,980,In fase di definizione/aggiornamento,,,,0,,,,
@@ -23974,7 +23974,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-08-20T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,346,,,,
 2020-08-20T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,127,,,,
 2020-08-20T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,92,,,,
-2020-08-20T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,86,Dei 10 positivi di oggi tre sono soggetti residenti fuori regione e quattro sono migranti ,,
+2020-08-20T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,86,Dei 10 positivi di oggi tre sono soggetti residenti fuori regione e quattro sono migranti ,,,
 2020-08-20T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-08-20T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,719,,,,
 2020-08-20T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,223,,,,
@@ -24421,7 +24421,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-08-23T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,353,,,,
 2020-08-23T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,128,,,,
 2020-08-23T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,92,,,,
-2020-08-23T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,92,Degli otto casi positivi di oggi 1 è  di fuori regione e uno è  del CARA.,,
+2020-08-23T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,92,Degli otto casi positivi di oggi 1 è  di fuori regione e uno è  del CARA.,,,
 2020-08-23T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-08-23T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,798,,,,
 2020-08-23T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,227,,,,
@@ -24570,7 +24570,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-08-24T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,353,,,,
 2020-08-24T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,128,,,,
 2020-08-24T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,92,,,,
-2020-08-24T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,94,I due casi rilevati oggi sono soggetti residenti fuori Regione,,
+2020-08-24T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,94,I due casi rilevati oggi sono soggetti residenti fuori Regione,,,
 2020-08-24T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-08-24T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,830,,,,
 2020-08-24T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,228,,,,
@@ -25464,7 +25464,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-08-30T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,385,,,,
 2020-08-30T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,130,,,,
 2020-08-30T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,92,,,,
-2020-08-30T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,117,Dei 34 positivi di oggi 10 sono migranti,,
+2020-08-30T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,117,Dei 34 positivi di oggi 10 sono migranti,,,
 2020-08-30T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-08-30T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,963,,,,
 2020-08-30T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,235,,,,
@@ -25754,7 +25754,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-09-01T17:00:00,ITA,13,Abruzzo,879,Fuori Regione / Provincia Autonoma,,,,31,,,,
 2020-09-01T17:00:00,ITA,13,Abruzzo,979,In fase di definizione/aggiornamento,,,,2,,,,
 2020-09-01T17:00:00,ITA,17,Basilicata,076,Potenza,PZ,40.63947052,15.80514834,205,,,,
-2020-09-01T17:00:00,ITA,17,Basilicata,077,Matera,MT,40.66751177,16.59792442,228,AL TOTALE CASI E' STATO DETRATTO N. 1 CASO IN RESIDENTE IN REGIONE BASILICATA (PROVINCIA DI MATERA) PROVENIENTE DA STATO ESTERO DATO COME POSITIVO IN DATA 28.08.2020 E NON CONFERMATO DA N. 2 TAMPONI DI CONTROLLO PROCESSATI PRESSO IL LABORATORIO REGIONALE DI RIFERIMENTO.,,
+2020-09-01T17:00:00,ITA,17,Basilicata,077,Matera,MT,40.66751177,16.59792442,228,AL TOTALE CASI E' STATO DETRATTO N. 1 CASO IN RESIDENTE IN REGIONE BASILICATA (PROVINCIA DI MATERA) PROVENIENTE DA STATO ESTERO DATO COME POSITIVO IN DATA 28.08.2020 E NON CONFERMATO DA N. 2 TAMPONI DI CONTROLLO PROCESSATI PRESSO IL LABORATORIO REGIONALE DI RIFERIMENTO.,,,
 2020-09-01T17:00:00,ITA,17,Basilicata,880,Fuori Regione / Provincia Autonoma,,,,91,,,,
 2020-09-01T17:00:00,ITA,17,Basilicata,980,In fase di definizione/aggiornamento,,,,0,,,,
 2020-09-01T17:00:00,ITA,18,Calabria,078,Cosenza,CS,39.29308681,16.25609692,528,,,,
@@ -25762,7 +25762,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-09-01T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,388,,,,
 2020-09-01T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,133,,,,
 2020-09-01T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,96,,,,
-2020-09-01T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,140,Dei ventidue soggetti positivi di oggi 17 sono migranti e 2 residenti fuori regione ,,
+2020-09-01T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,140,Dei ventidue soggetti positivi di oggi 17 sono migranti e 2 residenti fuori regione ,,,
 2020-09-01T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-09-01T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,999,,,,
 2020-09-01T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,239,,,,
@@ -25911,7 +25911,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-09-02T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,391,,,,
 2020-09-02T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,133,,,,
 2020-09-02T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,96,,,,
-2020-09-02T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,168,Dei 32 casi rilevati oggi 27 sono migranti e uno è un soggetto residente Fuori Regione ,,
+2020-09-02T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,168,Dei 32 casi rilevati oggi 27 sono migranti e uno è un soggetto residente Fuori Regione ,,,
 2020-09-02T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-09-02T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,1006,,,,
 2020-09-02T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,244,,,,
@@ -26060,7 +26060,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-09-03T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,392,,,,
 2020-09-03T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,135,,,,
 2020-09-03T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,96,,,,
-2020-09-03T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,170,Dei tredici positivi di oggi due sono migranti.,,
+2020-09-03T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,170,Dei tredici positivi di oggi due sono migranti.,,,
 2020-09-03T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-09-03T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,1026,,,,
 2020-09-03T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,247,,,,
@@ -26209,7 +26209,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-09-04T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,395,,,,
 2020-09-04T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,139,,,,
 2020-09-04T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,96,,,,
-2020-09-04T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,176,Dei 19 positivi di oggi sei sono migranti.,,
+2020-09-04T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,176,Dei 19 positivi di oggi sei sono migranti.,,,
 2020-09-04T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-09-04T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,1054,,,,
 2020-09-04T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,252,,,,
@@ -26351,14 +26351,14 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-09-05T17:00:00,ITA,13,Abruzzo,979,In fase di definizione/aggiornamento,,,,1,,,,
 2020-09-05T17:00:00,ITA,17,Basilicata,076,Potenza,PZ,40.63947052,15.80514834,210,,,,
 2020-09-05T17:00:00,ITA,17,Basilicata,077,Matera,MT,40.66751177,16.59792442,243,,,,
-2020-09-05T17:00:00,ITA,17,Basilicata,880,Fuori Regione / Provincia Autonoma,,,,102,N. 1 CASO POSITIVO PER ATTIVITA' DI SCREENG DIAGNOSTICATO PRESSO LABORATORIO ANALISI ACCREDITATO REGIONE BASILICATA IN RESIDENTE IN REGIONE PUGLIA.,,
+2020-09-05T17:00:00,ITA,17,Basilicata,880,Fuori Regione / Provincia Autonoma,,,,102,N. 1 CASO POSITIVO PER ATTIVITA' DI SCREENG DIAGNOSTICATO PRESSO LABORATORIO ANALISI ACCREDITATO REGIONE BASILICATA IN RESIDENTE IN REGIONE PUGLIA.,,,
 2020-09-05T17:00:00,ITA,17,Basilicata,980,In fase di definizione/aggiornamento,,,,0,,,,
 2020-09-05T17:00:00,ITA,18,Calabria,078,Cosenza,CS,39.29308681,16.25609692,550,,,,
 2020-09-05T17:00:00,ITA,18,Calabria,079,Catanzaro,CZ,38.90597598,16.59440194,231,,,,
 2020-09-05T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,398,,,,
 2020-09-05T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,139,,,,
 2020-09-05T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,96,,,,
-2020-09-05T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,182,Dei 19 positivi di oggi 6 sono migranti.,,
+2020-09-05T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,182,Dei 19 positivi di oggi 6 sono migranti.,,,
 2020-09-05T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-09-05T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,1066,,,,
 2020-09-05T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,252,,,,
@@ -27401,7 +27401,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-09-12T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,412,,,,
 2020-09-12T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,144,,,,
 2020-09-12T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,98,,,,
-2020-09-12T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,201,Dei 18 positivi di oggi 7 sono migranti  e 1 è un soggetto  residente  fuori Regione.,,
+2020-09-12T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,201,Dei 18 positivi di oggi 7 sono migranti  e 1 è un soggetto  residente  fuori Regione.,,,
 2020-09-12T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-09-12T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,1238,,,,
 2020-09-12T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,280,,,,
@@ -27684,7 +27684,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-09-13T17:00:00,ITA,05,Veneto,029,Rovigo,RO,45.07107289,11.79007,609,,,,
 2020-09-13T17:00:00,ITA,05,Veneto,899,Fuori Regione / Provincia Autonoma,,,,414,,,,
 2020-09-13T17:00:00,ITA,05,Veneto,999,In fase di definizione/aggiornamento,,,,63,,,,
-2020-09-14T17:00:00,ITA,13,Abruzzo,066,L'Aquila,AQ,42.35122196,13.39843823,557,Ieri era stato erroneamente conteggiato 1 paziente di Chieti,,
+2020-09-14T17:00:00,ITA,13,Abruzzo,066,L'Aquila,AQ,42.35122196,13.39843823,557,Ieri era stato erroneamente conteggiato 1 paziente di Chieti,,,
 2020-09-14T17:00:00,ITA,13,Abruzzo,067,Teramo,TE,42.6589177,13.70439971,742,,,,
 2020-09-14T17:00:00,ITA,13,Abruzzo,068,Pescara,PE,42.46458398,14.21364822,1737,,,,
 2020-09-14T17:00:00,ITA,13,Abruzzo,069,Chieti,CH,42.35103167,14.16754574,947,,,,
@@ -27989,7 +27989,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-09-16T17:00:00,ITA,13,Abruzzo,879,Fuori Regione / Provincia Autonoma,,,,32,,,,
 2020-09-16T17:00:00,ITA,13,Abruzzo,979,In fase di definizione/aggiornamento,,,,2,,,,
 2020-09-16T17:00:00,ITA,17,Basilicata,076,Potenza,PZ,40.63947052,15.80514834,237,,,,
-2020-09-16T17:00:00,ITA,17,Basilicata,077,Matera,MT,40.66751177,16.59792442,262,IL DATO EFFETTIVO  CASI POSITIVI PROVINCIA DI MATERA DEL 15.09.2020 E' 261 AL QUALE VA AD AGGIUNGERSI N. 1 CASO POSITIVO ODIERNO,,
+2020-09-16T17:00:00,ITA,17,Basilicata,077,Matera,MT,40.66751177,16.59792442,262,IL DATO EFFETTIVO  CASI POSITIVI PROVINCIA DI MATERA DEL 15.09.2020 E' 261 AL QUALE VA AD AGGIUNGERSI N. 1 CASO POSITIVO ODIERNO,,,
 2020-09-16T17:00:00,ITA,17,Basilicata,880,Fuori Regione / Provincia Autonoma,,,,124,,,,
 2020-09-16T17:00:00,ITA,17,Basilicata,980,In fase di definizione/aggiornamento,,,,0,,,,
 2020-09-16T17:00:00,ITA,18,Calabria,078,Cosenza,CS,39.29308681,16.25609692,606,,,,
@@ -27997,7 +27997,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-09-16T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,423,,,,
 2020-09-16T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,144,,,,
 2020-09-16T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,100,,,,
-2020-09-16T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,211,Dei 19 positivi di oggi 8 sono migranti ,,
+2020-09-16T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,211,Dei 19 positivi di oggi 8 sono migranti ,,,
 2020-09-16T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-09-16T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,1356,,,,
 2020-09-16T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,296,,,,
@@ -28146,7 +28146,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-09-17T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,426,,,,
 2020-09-17T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,144,,,,
 2020-09-17T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,100,,,,
-2020-09-17T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,214,dei 16 positivi di oggi 3 sono migranti ,,
+2020-09-17T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,214,dei 16 positivi di oggi 3 sono migranti ,,,
 2020-09-17T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-09-17T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,1412,,,,
 2020-09-17T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,304,,,,
@@ -28295,7 +28295,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-09-18T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,430,,,,
 2020-09-18T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,144,,,,
 2020-09-18T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,102,,,,
-2020-09-18T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,226,Dei 28 positivi di oggi 12 sono migranti.,,
+2020-09-18T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,226,Dei 28 positivi di oggi 12 sono migranti.,,,
 2020-09-18T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-09-18T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,1431,,,,
 2020-09-18T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,317,,,,
@@ -28444,7 +28444,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-09-19T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,436,,,,
 2020-09-19T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,144,,,,
 2020-09-19T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,105,,,,
-2020-09-19T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,230,Dei 25 positivi di oggi 4 sono migranti ,,
+2020-09-19T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,230,Dei 25 positivi di oggi 4 sono migranti ,,,
 2020-09-19T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-09-19T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,1458,,,,
 2020-09-19T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,328,,,,
@@ -28891,7 +28891,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-09-22T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,450,,,,
 2020-09-22T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,144,,,,
 2020-09-22T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,108,,,,
-2020-09-22T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,250,Dei 24 positivi di oggi 20 sono migranti .,,
+2020-09-22T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,250,Dei 24 positivi di oggi 20 sono migranti .,,,
 2020-09-22T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-09-22T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,1582,,,,
 2020-09-22T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,338,,,,
@@ -29189,7 +29189,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-09-24T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,452,,,,
 2020-09-24T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,147,,,,
 2020-09-24T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,111,,,,
-2020-09-24T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,254,Dei nove positivi di oggi 3 sono migranti,,
+2020-09-24T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,254,Dei nove positivi di oggi 3 sono migranti,,,
 2020-09-24T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-09-24T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,1640,,,,
 2020-09-24T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,345,,,,
@@ -30083,7 +30083,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-09-30T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,460,,,,
 2020-09-30T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,147,,,,
 2020-09-30T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,124,,,,
-2020-09-30T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,285,DEi 18 positivi di oggi 4 sono migranti ,,
+2020-09-30T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,285,DEi 18 positivi di oggi 4 sono migranti ,,,
 2020-09-30T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-09-30T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,1870,,,,
 2020-09-30T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,393,,,,
@@ -30367,10 +30367,10 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-10-01T17:00:00,ITA,05,Veneto,899,Fuori Regione / Provincia Autonoma,,,,456,,,,
 2020-10-01T17:00:00,ITA,05,Veneto,999,In fase di definizione/aggiornamento,,,,82,,,,
 2020-10-02T17:00:00,ITA,13,Abruzzo,066,L'Aquila,AQ,42.35122196,13.39843823,650,,,,
-2020-10-02T17:00:00,ITA,13,Abruzzo,067,Teramo,TE,42.6589177,13.70439971,830,rettificato 1 paziente da fuori regione a provincia di Teramo,,
+2020-10-02T17:00:00,ITA,13,Abruzzo,067,Teramo,TE,42.6589177,13.70439971,830,rettificato 1 paziente da fuori regione a provincia di Teramo,,,
 2020-10-02T17:00:00,ITA,13,Abruzzo,068,Pescara,PE,42.46458398,14.21364822,1912,,,,
 2020-10-02T17:00:00,ITA,13,Abruzzo,069,Chieti,CH,42.35103167,14.16754574,1067,,,,
-2020-10-02T17:00:00,ITA,13,Abruzzo,879,Fuori Regione / Provincia Autonoma,,,,37,rettificato 1 paziente da fuori regione a provincia di Teramo,,
+2020-10-02T17:00:00,ITA,13,Abruzzo,879,Fuori Regione / Provincia Autonoma,,,,37,rettificato 1 paziente da fuori regione a provincia di Teramo,,,
 2020-10-02T17:00:00,ITA,13,Abruzzo,979,In fase di definizione/aggiornamento,,,,2,,,,
 2020-10-02T17:00:00,ITA,17,Basilicata,076,Potenza,PZ,40.63947052,15.80514834,421,,,,
 2020-10-02T17:00:00,ITA,17,Basilicata,077,Matera,MT,40.66751177,16.59792442,287,,,,
@@ -30530,7 +30530,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-10-03T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,473,,,,
 2020-10-03T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,147,,,,
 2020-10-03T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,129,,,,
-2020-10-03T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,290,Dei 24 positivi di oggi 4 sono migranti.,,
+2020-10-03T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,290,Dei 24 positivi di oggi 4 sono migranti.,,,
 2020-10-03T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-10-03T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,1994,,,,
 2020-10-03T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,435,,,,
@@ -30828,7 +30828,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-10-05T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,493,,,,
 2020-10-05T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,149,,,,
 2020-10-05T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,129,,,,
-2020-10-05T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,294,Dei 23 positivi di oggi 4 sono migranti ,,
+2020-10-05T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,294,Dei 23 positivi di oggi 4 sono migranti ,,,
 2020-10-05T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-10-05T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,2146,,,,
 2020-10-05T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,450,,,,
@@ -31871,7 +31871,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-10-12T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,671,,,,
 2020-10-12T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,155,,,,
 2020-10-12T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,130,,,,
-2020-10-12T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,323,Dei 53 positivi di oggi 21 sono migranti.,,
+2020-10-12T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,323,Dei 53 positivi di oggi 21 sono migranti.,,,
 2020-10-12T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-10-12T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,2780,,,,
 2020-10-12T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,545,,,,
@@ -32020,7 +32020,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-10-13T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,693,,,,
 2020-10-13T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,155,,,,
 2020-10-13T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,130,,,,
-2020-10-13T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,327,Dei 44 positivi di oggi 4 sono migranti.,,
+2020-10-13T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,327,Dei 44 positivi di oggi 4 sono migranti.,,,
 2020-10-13T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-10-13T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,2872,,,,
 2020-10-13T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,545,,,,
@@ -33650,7 +33650,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-10-24T17:00:00,ITA,13,Abruzzo,069,Chieti,CH,42.35103167,14.16754574,1551,,,,
 2020-10-24T17:00:00,ITA,13,Abruzzo,879,Fuori Regione / Provincia Autonoma,,,,54,,,,
 2020-10-24T17:00:00,ITA,13,Abruzzo,979,In fase di definizione/aggiornamento,,,,75,,,,
-2020-10-24T17:00:00,ITA,17,Basilicata,076,Potenza,PZ,40.63947052,15.80514834,919,N.B.: AL TOTALE CASI POSITIVI ODIERNO VA SOTTRATTO N. 1 CASO POSITIVO COMUNICATO ERRONEAMENTE IN PIU' IN DATA 23 OTTOBRE 2020 (PROVINCIA DI POTENZA). PERTANTO IL TOTALE CASI POSITIVI ALLA DATA ODIERNA E' DI 1619 CASI. ,,
+2020-10-24T17:00:00,ITA,17,Basilicata,076,Potenza,PZ,40.63947052,15.80514834,919,N.B.: AL TOTALE CASI POSITIVI ODIERNO VA SOTTRATTO N. 1 CASO POSITIVO COMUNICATO ERRONEAMENTE IN PIU' IN DATA 23 OTTOBRE 2020 (PROVINCIA DI POTENZA). PERTANTO IL TOTALE CASI POSITIVI ALLA DATA ODIERNA E' DI 1619 CASI. ,,,
 2020-10-24T17:00:00,ITA,17,Basilicata,077,Matera,MT,40.66751177,16.59792442,510,,,,
 2020-10-24T17:00:00,ITA,17,Basilicata,880,Fuori Regione / Provincia Autonoma,,,,190,,,,
 2020-10-24T17:00:00,ITA,17,Basilicata,980,In fase di definizione/aggiornamento,,,,0,,,,
@@ -38716,8 +38716,8 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-11-27T17:00:00,ITA,13,Abruzzo,069,Chieti,CH,42.35103167,14.16754574,5098,,,,
 2020-11-27T17:00:00,ITA,13,Abruzzo,879,Fuori Regione / Provincia Autonoma,,,,243,,,,
 2020-11-27T17:00:00,ITA,13,Abruzzo,979,In fase di definizione/aggiornamento,,,,167,,,,
-2020-11-27T17:00:00,ITA,17,Basilicata,076,Potenza,PZ,40.63947052,15.80514834,4673,SONO STATI DETRATTI N. 4 CASI DATI IN PIU' IL 26 C.M. PER ERRORE MATERIALE,,
-2020-11-27T17:00:00,ITA,17,Basilicata,077,Matera,MT,40.66751177,16.59792442,2709,SONO STATI DETRATTI N. 5 CASI IN PIU' COMUNICATI IL 26 C.M. PER MERO ERRORE MATERIALE,,
+2020-11-27T17:00:00,ITA,17,Basilicata,076,Potenza,PZ,40.63947052,15.80514834,4673,SONO STATI DETRATTI N. 4 CASI DATI IN PIU' IL 26 C.M. PER ERRORE MATERIALE,,,
+2020-11-27T17:00:00,ITA,17,Basilicata,077,Matera,MT,40.66751177,16.59792442,2709,SONO STATI DETRATTI N. 5 CASI IN PIU' COMUNICATI IL 26 C.M. PER MERO ERRORE MATERIALE,,,
 2020-11-27T17:00:00,ITA,17,Basilicata,880,Fuori Regione / Provincia Autonoma,,,,281,,,,
 2020-11-27T17:00:00,ITA,17,Basilicata,980,In fase di definizione/aggiornamento,,,,0,,,,
 2020-11-27T17:00:00,ITA,18,Calabria,078,Cosenza,CS,39.29308681,16.25609692,4565,,,,
@@ -39470,7 +39470,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-12-02T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,6424,,,,
 2020-12-02T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,1590,,,,
 2020-12-02T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,958,,,,
-2020-12-02T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,404,.  Ottanta dei  positivi del setting Fuori regione/ stato estero sono inseriti nel totale dei casi dell'ASP di Cosenza in quato ne  monitora l'andamento.,,
+2020-12-02T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,404,.  Ottanta dei  positivi del setting Fuori regione/ stato estero sono inseriti nel totale dei casi dell'ASP di Cosenza in quato ne  monitora l'andamento.,,,
 2020-12-02T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
 2020-12-02T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,29684,,,,
 2020-12-02T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,2963,,,,
@@ -42837,7 +42837,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-12-24T17:00:00,ITA,16,Puglia,892,Fuori Regione / Provincia Autonoma,,,,487,,,,
 2020-12-24T17:00:00,ITA,16,Puglia,992,In fase di definizione/aggiornamento,,,,81,,,,
 2020-12-24T17:00:00,ITA,20,Sardegna,090,Sassari,SS,40.72667657,8.559667131,9965,,,,
-2020-12-24T17:00:00,ITA,20,Sardegna,091,Nuoro,NU,40.32318834,9.330296393,5910,Il dato riporta anche i nuovi casi rilevati in data 23 dicembre e non dichiarati nel relativo Template. I nuovi casi di oggi sono 48,,
+2020-12-24T17:00:00,ITA,20,Sardegna,091,Nuoro,NU,40.32318834,9.330296393,5910,Il dato riporta anche i nuovi casi rilevati in data 23 dicembre e non dichiarati nel relativo Template. I nuovi casi di oggi sono 48,,,
 2020-12-24T17:00:00,ITA,20,Sardegna,092,Cagliari,CA,39.21531192,9.110616306,6558,,,,
 2020-12-24T17:00:00,ITA,20,Sardegna,095,Oristano,OR,39.90381075,8.591183151000001,2287,,,,
 2020-12-24T17:00:00,ITA,20,Sardegna,111,Sud Sardegna,SU,39.16641462,8.526242676,4747,,,,
@@ -42870,9 +42870,9 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-12-24T17:00:00,ITA,10,Umbria,055,Terni,TR,42.56071258,12.6466875,6387,,,,
 2020-12-24T17:00:00,ITA,10,Umbria,897,Fuori Regione / Provincia Autonoma,,,,1157,,,,
 2020-12-24T17:00:00,ITA,10,Umbria,997,In fase di definizione/aggiornamento,,,,0,,,,
-2020-12-24T17:00:00,ITA,02,Valle d'Aosta,007,Aosta,AO,45.73750286,7.320149366,6871,"Si è provveduto in data odierna ad una bonifica del campo ""comune di residenza""",,
-2020-12-24T17:00:00,ITA,02,Valle d'Aosta,898,Fuori Regione / Provincia Autonoma,,,,236,"Si è provveduto in data odierna ad una bonifica del campo ""comune di residenza""",,
-2020-12-24T17:00:00,ITA,02,Valle d'Aosta,998,In fase di definizione/aggiornamento,,,,12,"Si è provveduto in data odierna ad una bonifica del campo ""comune di residenza""",,
+2020-12-24T17:00:00,ITA,02,Valle d'Aosta,007,Aosta,AO,45.73750286,7.320149366,6871,"Si è provveduto in data odierna ad una bonifica del campo ""comune di residenza",,,
+2020-12-24T17:00:00,ITA,02,Valle d'Aosta,898,Fuori Regione / Provincia Autonoma,,,,236,"Si è provveduto in data odierna ad una bonifica del campo ""comune di residenza",,,
+2020-12-24T17:00:00,ITA,02,Valle d'Aosta,998,In fase di definizione/aggiornamento,,,,12,"Si è provveduto in data odierna ad una bonifica del campo ""comune di residenza",,,
 2020-12-24T17:00:00,ITA,05,Veneto,023,Verona,VR,45.43839046,10.99352685,44784,,,,
 2020-12-24T17:00:00,ITA,05,Veneto,024,Vicenza,VI,45.547497,11.54597109,39659,,,,
 2020-12-24T17:00:00,ITA,05,Veneto,025,Belluno,BL,46.13837528,12.21704167,13575,,,,
@@ -42988,7 +42988,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-12-25T17:00:00,ITA,20,Sardegna,090,Sassari,SS,40.72667657,8.559667131,10037,,,,
 2020-12-25T17:00:00,ITA,20,Sardegna,091,Nuoro,NU,40.32318834,9.330296393,5945,,,,
 2020-12-25T17:00:00,ITA,20,Sardegna,092,Cagliari,CA,39.21531192,9.110616306,6678,,,,
-2020-12-25T17:00:00,ITA,20,Sardegna,095,Oristano,OR,39.90381075,8.591183151000001,2388,"I casi odierni sono complessivi dei dati di 2 giorni, oggi 33 nuovi casi, ieri 68 nuovi casi",,
+2020-12-25T17:00:00,ITA,20,Sardegna,095,Oristano,OR,39.90381075,8.591183151000001,2388,"I casi odierni sono complessivi dei dati di 2 giorni, oggi 33 nuovi casi, ieri 68 nuovi casi",,,
 2020-12-25T17:00:00,ITA,20,Sardegna,111,Sud Sardegna,SU,39.16641462,8.526242676,4828,,,,
 2020-12-25T17:00:00,ITA,20,Sardegna,893,Fuori Regione / Provincia Autonoma,,,,0,,,,
 2020-12-25T17:00:00,ITA,20,Sardegna,993,In fase di definizione/aggiornamento,,,,0,,,,
@@ -43342,7 +43342,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2020-12-28T17:00:00,ITA,18,Calabria,078,Cosenza,CS,39.29308681,16.25609692,6919,,,,
 2020-12-28T17:00:00,ITA,18,Calabria,079,Catanzaro,CZ,38.90597598,16.59440194,3225,,,,
 2020-12-28T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,8655,,,,
-2020-12-28T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,2183,Per un ricalcolo l’Asp di Crotone ha comunicato un positivo in meno.,,
+2020-12-28T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,2183,Per un ricalcolo l’Asp di Crotone ha comunicato un positivo in meno.,,,
 2020-12-28T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,1566,,,,
 2020-12-28T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,358,,,,
 2020-12-28T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,,,
@@ -46010,7 +46010,7 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2021-01-14T17:00:00,ITA,05,Veneto,028,Padova,PD,45.40692987,11.87608718,53653,,,,
 2021-01-14T17:00:00,ITA,05,Veneto,029,Rovigo,RO,45.07107289,11.79007,8996,,,,
 2021-01-14T17:00:00,ITA,05,Veneto,899,Fuori Regione / Provincia Autonoma,,,,3922,,,,
-2021-01-14T17:00:00,ITA,05,Veneto,999,In fase di definizione/aggiornamento,,,,593,,,
+2021-01-14T17:00:00,ITA,05,Veneto,999,In fase di definizione/aggiornamento,,,,593,,,,
 2021-01-15T17:00:00,ITA,13,Abruzzo,066,L'Aquila,AQ,42.35122196,13.39843823,11684,,ITF,ITF1,ITF11
 2021-01-15T17:00:00,ITA,13,Abruzzo,067,Teramo,TE,42.6589177,13.70439971,10258,,ITF,ITF1,ITF12
 2021-01-15T17:00:00,ITA,13,Abruzzo,068,Pescara,PE,42.46458398,14.21364822,7934,,ITF,ITF1,ITF13
@@ -46607,3 +46607,152 @@ data,stato,codice_regione,denominazione_regione,codice_provincia,denominazione_p
 2021-01-18T17:00:00,ITA,05,Veneto,029,Rovigo,RO,45.07107289,11.79007,9185,,ITH,ITH3,ITH37
 2021-01-18T17:00:00,ITA,05,Veneto,899,Fuori Regione / Provincia Autonoma,,,,3979,,ITH,ITH3,
 2021-01-18T17:00:00,ITA,05,Veneto,999,In fase di definizione/aggiornamento,,,,594,,ITH,ITH3,
+2021-01-19T17:00:00,ITA,13,Abruzzo,066,L'Aquila,AQ,42.35122196,13.39843823,11772,,ITF,ITF1,ITF11
+2021-01-19T17:00:00,ITA,13,Abruzzo,067,Teramo,TE,42.6589177,13.70439971,10425,,ITF,ITF1,ITF12
+2021-01-19T17:00:00,ITA,13,Abruzzo,068,Pescara,PE,42.46458398,14.21364822,8142,,ITF,ITF1,ITF13
+2021-01-19T17:00:00,ITA,13,Abruzzo,069,Chieti,CH,42.35103167,14.16754574,8687,,ITF,ITF1,ITF14
+2021-01-19T17:00:00,ITA,13,Abruzzo,879,Fuori Regione / Provincia Autonoma,,,,342,,ITF,ITF1,
+2021-01-19T17:00:00,ITA,13,Abruzzo,979,In fase di definizione/aggiornamento,,,,167,,ITF,ITF1,
+2021-01-19T17:00:00,ITA,17,Basilicata,076,Potenza,PZ,40.63947052,15.80514834,8353,,ITF,ITF5,ITF51
+2021-01-19T17:00:00,ITA,17,Basilicata,077,Matera,MT,40.66751177,16.59792442,3826,,ITF,ITF5,ITF52
+2021-01-19T17:00:00,ITA,17,Basilicata,880,Fuori Regione / Provincia Autonoma,,,,389,,ITF,ITF5,
+2021-01-19T17:00:00,ITA,17,Basilicata,980,In fase di definizione/aggiornamento,,,,0,,ITF,ITF5,
+2021-01-19T17:00:00,ITA,18,Calabria,078,Cosenza,CS,39.29308681,16.25609692,8545,,ITF,ITF6,ITF61
+2021-01-19T17:00:00,ITA,18,Calabria,079,Catanzaro,CZ,38.90597598,16.59440194,4362,,ITF,ITF6,ITF63
+2021-01-19T17:00:00,ITA,18,Calabria,080,Reggio di Calabria,RC,38.10922769,15.643452700000001,11234,,ITF,ITF6,ITF65
+2021-01-19T17:00:00,ITA,18,Calabria,101,Crotone,KR,39.08036878,17.12538864,2506,,ITF,ITF6,ITF62
+2021-01-19T17:00:00,ITA,18,Calabria,102,Vibo Valentia,VV,38.67624147,16.10157414,2514,,ITF,ITF6,ITF64
+2021-01-19T17:00:00,ITA,18,Calabria,882,Fuori Regione / Provincia Autonoma,,,,359,,ITF,ITF6,
+2021-01-19T17:00:00,ITA,18,Calabria,982,In fase di definizione/aggiornamento,,,,0,,ITF,ITF6,
+2021-01-19T17:00:00,ITA,15,Campania,061,Caserta,CE,41.07465878,14.33240464,37265,,ITF,ITF3,ITF31
+2021-01-19T17:00:00,ITA,15,Campania,062,Benevento,BN,41.12969987,14.78151683,5182,,ITF,ITF3,ITF32
+2021-01-19T17:00:00,ITA,15,Campania,063,Napoli,NA,40.83956555,14.25084984,126504,,ITF,ITF3,ITF33
+2021-01-19T17:00:00,ITA,15,Campania,064,Avellino,AV,40.91404699,14.79528803,9439,,ITF,ITF3,ITF34
+2021-01-19T17:00:00,ITA,15,Campania,065,Salerno,SA,40.67821961,14.759402599999998,29631,,ITF,ITF3,ITF35
+2021-01-19T17:00:00,ITA,15,Campania,883,Fuori Regione / Provincia Autonoma,,,,0,,ITF,ITF3,
+2021-01-19T17:00:00,ITA,15,Campania,983,In fase di definizione/aggiornamento,,,,493,,ITF,ITF3,
+2021-01-19T17:00:00,ITA,08,Emilia-Romagna,033,Piacenza,PC,45.05193462,9.692632596000001,16939,,ITH,ITH5,ITH51
+2021-01-19T17:00:00,ITA,08,Emilia-Romagna,034,Parma,PR,44.80107394,10.32834985,14145,,ITH,ITH5,ITH52
+2021-01-19T17:00:00,ITA,08,Emilia-Romagna,035,Reggio nell'Emilia,RE,44.69735289,10.63007973,27481,,ITH,ITH5,ITH53
+2021-01-19T17:00:00,ITA,08,Emilia-Romagna,036,Modena,MO,44.64600009,10.92615487,35747,,ITH,ITH5,ITH54
+2021-01-19T17:00:00,ITA,08,Emilia-Romagna,037,Bologna,BO,44.49436681,11.341720800000001,45707,,ITH,ITH5,ITH55
+2021-01-19T17:00:00,ITA,08,Emilia-Romagna,038,Ferrara,FE,44.83599085,11.61868934,11517,,ITH,ITH5,ITH56
+2021-01-19T17:00:00,ITA,08,Emilia-Romagna,039,Ravenna,RA,44.41722493,12.19913936,15450,,ITH,ITH5,ITH57
+2021-01-19T17:00:00,ITA,08,Emilia-Romagna,040,Forlì-Cesena,FC,44.22268559,12.04068608,15758,,ITH,ITH5,ITH58
+2021-01-19T17:00:00,ITA,08,Emilia-Romagna,099,Rimini,RN,44.06090087,12.5656295,18089,,ITH,ITH5,ITH59
+2021-01-19T17:00:00,ITA,08,Emilia-Romagna,884,Fuori Regione / Provincia Autonoma,,,,2328,,ITH,ITH5,
+2021-01-19T17:00:00,ITA,08,Emilia-Romagna,984,In fase di definizione/aggiornamento,,,,1013,,ITH,ITH5,
+2021-01-19T17:00:00,ITA,06,Friuli Venezia Giulia,030,Udine,UD,46.06255516,13.2348383,26945,,ITH,ITH4,ITH42
+2021-01-19T17:00:00,ITA,06,Friuli Venezia Giulia,031,Gorizia,GO,45.94149817,13.62212502,7506,,ITH,ITH4,ITH43
+2021-01-19T17:00:00,ITA,06,Friuli Venezia Giulia,032,Trieste,TS,45.6494354,13.76813649,12562,,ITH,ITH4,ITH44
+2021-01-19T17:00:00,ITA,06,Friuli Venezia Giulia,093,Pordenone,PN,45.95443546,12.66002909,13589,,ITH,ITH4,ITH41
+2021-01-19T17:00:00,ITA,06,Friuli Venezia Giulia,885,Fuori Regione / Provincia Autonoma,,,,771,,ITH,ITH4,
+2021-01-19T17:00:00,ITA,06,Friuli Venezia Giulia,985,In fase di definizione/aggiornamento,,,,0,,ITH,ITH4,
+2021-01-19T17:00:00,ITA,12,Lazio,056,Viterbo,VT,42.4173828,12.10473416,10332,,ITI,ITI4,ITI41
+2021-01-19T17:00:00,ITA,12,Lazio,057,Rieti,RI,42.40488444,12.86205939,6184,,ITI,ITI4,ITI42
+2021-01-19T17:00:00,ITA,12,Lazio,058,Roma,RM,41.89277044,12.48366722,136663,,ITI,ITI4,ITI43
+2021-01-19T17:00:00,ITA,12,Lazio,059,Latina,LT,41.46759465,12.90368482,18479,,ITI,ITI4,ITI44
+2021-01-19T17:00:00,ITA,12,Lazio,060,Frosinone,FR,41.63964569,13.35117161,16124,,ITI,ITI4,ITI45
+2021-01-19T17:00:00,ITA,12,Lazio,886,Fuori Regione / Provincia Autonoma,,,,3812,,ITI,ITI4,
+2021-01-19T17:00:00,ITA,12,Lazio,986,In fase di definizione/aggiornamento,,,,21,,ITI,ITI4,
+2021-01-19T17:00:00,ITA,07,Liguria,008,Imperia,IM,43.88570648,8.027850297999999,7223,,ITC,ITC3,ITC31
+2021-01-19T17:00:00,ITA,07,Liguria,009,Savona,SV,44.30750461,8.481108654,9230,,ITC,ITC3,ITC32
+2021-01-19T17:00:00,ITA,07,Liguria,010,Genova,GE,44.41149314,8.9326992,37361,,ITC,ITC3,ITC33
+2021-01-19T17:00:00,ITA,07,Liguria,011,La Spezia,SP,44.10704991,9.8281897,9126,,ITC,ITC3,ITC34
+2021-01-19T17:00:00,ITA,07,Liguria,887,Fuori Regione / Provincia Autonoma,,,,1262,,ITC,ITC3,
+2021-01-19T17:00:00,ITA,07,Liguria,987,In fase di definizione/aggiornamento,,,,2059,,ITC,ITC3,
+2021-01-19T17:00:00,ITA,03,Lombardia,012,Varese,VA,45.81701677,8.822868344,55895,,ITC,ITC4,ITC41
+2021-01-19T17:00:00,ITA,03,Lombardia,013,Como,CO,45.8099912,9.085159546,37125,,ITC,ITC4,ITC42
+2021-01-19T17:00:00,ITA,03,Lombardia,014,Sondrio,SO,46.17099261,9.87147489,9575,,ITC,ITC4,ITC44
+2021-01-19T17:00:00,ITA,03,Lombardia,015,Milano,MI,45.46679409,9.190347404,183784,,ITC,ITC4,ITC4C
+2021-01-19T17:00:00,ITA,03,Lombardia,016,Bergamo,BG,45.69441368,9.668424528,29786,,ITC,ITC4,ITC46
+2021-01-19T17:00:00,ITA,03,Lombardia,017,Brescia,BS,45.53993052,10.21910323,48160,,ITC,ITC4,ITC47
+2021-01-19T17:00:00,ITA,03,Lombardia,018,Pavia,PV,45.18509264,9.160157191,27199,,ITC,ITC4,ITC48
+2021-01-19T17:00:00,ITA,03,Lombardia,019,Cremona,CR,45.13336675,10.02420865,15523,,ITC,ITC4,ITC4A
+2021-01-19T17:00:00,ITA,03,Lombardia,020,Mantova,MN,45.15726772,10.79277363,19195,,ITC,ITC4,ITC4B
+2021-01-19T17:00:00,ITA,03,Lombardia,097,Lecco,LC,45.85575781,9.393392246,14453,,ITC,ITC4,ITC43
+2021-01-19T17:00:00,ITA,03,Lombardia,098,Lodi,LO,45.31440693,9.503720769,11412,,ITC,ITC4,ITC49
+2021-01-19T17:00:00,ITA,03,Lombardia,108,Monza e della Brianza,MB,45.58439043,9.273582472000001,50459,,ITC,ITC4,ITC4D
+2021-01-19T17:00:00,ITA,03,Lombardia,888,Fuori Regione / Provincia Autonoma,,,,5976,,ITC,ITC4,
+2021-01-19T17:00:00,ITA,03,Lombardia,988,In fase di definizione/aggiornamento,,,,7743,,ITC,ITC4,
+2021-01-19T17:00:00,ITA,11,Marche,041,Pesaro e Urbino,PU,43.91014021,12.91345989,11860,,ITI,ITI3,ITI31
+2021-01-19T17:00:00,ITA,11,Marche,042,Ancona,AN,43.61675973,13.5188753,14358,,ITI,ITI3,ITI32
+2021-01-19T17:00:00,ITA,11,Marche,043,Macerata,MC,43.30023926,13.45307182,10800,,ITI,ITI3,ITI33
+2021-01-19T17:00:00,ITA,11,Marche,044,Ascoli Piceno,AP,42.85322304,13.57691127,5824,,ITI,ITI3,ITI34
+2021-01-19T17:00:00,ITA,11,Marche,109,Fermo,FM,43.16058534,13.71839535,5930,,ITI,ITI3,ITI35
+2021-01-19T17:00:00,ITA,11,Marche,889,Fuori Regione / Provincia Autonoma,,,,1855,,ITI,ITI3,
+2021-01-19T17:00:00,ITA,11,Marche,989,In fase di definizione/aggiornamento,,,,0,,ITI,ITI3,
+2021-01-19T17:00:00,ITA,14,Molise,070,Campobasso,CB,41.55774754,14.65916051,5088,,ITF,ITF2,ITF22
+2021-01-19T17:00:00,ITA,14,Molise,094,Isernia,IS,41.58800826,14.22575407,2464,,ITF,ITF2,ITF21
+2021-01-19T17:00:00,ITA,14,Molise,890,Fuori Regione / Provincia Autonoma,,,,52,,ITF,ITF2,
+2021-01-19T17:00:00,ITA,14,Molise,990,In fase di definizione/aggiornamento,,,,0,,ITF,ITF2,
+2021-01-19T17:00:00,ITA,04,P.A. Bolzano,021,Bolzano,BZ,46.49933453,11.35662422,34120,,ITH,ITH1,ITH10
+2021-01-19T17:00:00,ITA,04,P.A. Bolzano,881,Fuori Regione / Provincia Autonoma,,,,0,,ITH,ITH1,
+2021-01-19T17:00:00,ITA,04,P.A. Bolzano,981,In fase di definizione/aggiornamento,,,,0,,ITH,ITH1,
+2021-01-19T17:00:00,ITA,04,P.A. Trento,022,Trento,TN,46.06893511,11.12123097,25272,,ITH,ITH2,ITH20
+2021-01-19T17:00:00,ITA,04,P.A. Trento,896,Fuori Regione / Provincia Autonoma,,,,0,,ITH,ITH2,
+2021-01-19T17:00:00,ITA,04,P.A. Trento,996,In fase di definizione/aggiornamento,,,,0,,ITH,ITH2,
+2021-01-19T17:00:00,ITA,01,Piemonte,001,Torino,TO,45.0732745,7.680687483,111860,,ITC,ITC1,ITC11
+2021-01-19T17:00:00,ITA,01,Piemonte,002,Vercelli,VC,45.32398135,8.423234312,8077,,ITC,ITC1,ITC12
+2021-01-19T17:00:00,ITA,01,Piemonte,003,Novara,NO,45.44588506,8.621915884,16765,,ITC,ITC1,ITC15
+2021-01-19T17:00:00,ITA,01,Piemonte,004,Cuneo,CN,44.39329625,7.551171632000001,29606,,ITC,ITC1,ITC16
+2021-01-19T17:00:00,ITA,01,Piemonte,005,Asti,AT,44.89912921,8.204142547,11022,,ITC,ITC1,ITC17
+2021-01-19T17:00:00,ITA,01,Piemonte,006,Alessandria,AL,44.91297351,8.615401155,18909,,ITC,ITC1,ITC18
+2021-01-19T17:00:00,ITA,01,Piemonte,096,Biella,BI,45.5665112,8.054082167,7304,,ITC,ITC1,ITC13
+2021-01-19T17:00:00,ITA,01,Piemonte,103,Verbano-Cusio-Ossola,VB,45.921445500000004,8.551078752999999,7536,,ITC,ITC1,ITC14
+2021-01-19T17:00:00,ITA,01,Piemonte,891,Fuori Regione / Provincia Autonoma,,,,1107,,ITC,ITC1,
+2021-01-19T17:00:00,ITA,01,Piemonte,991,In fase di definizione/aggiornamento,,,,1725,,ITC,ITC1,
+2021-01-19T17:00:00,ITA,16,Puglia,071,Foggia,FG,41.46226865,15.54305094,23731,,ITF,ITF4,ITF46
+2021-01-19T17:00:00,ITA,16,Puglia,072,Bari,BA,41.12559576,16.86736689,42423,,ITF,ITF4,ITF47
+2021-01-19T17:00:00,ITA,16,Puglia,073,Taranto,TA,40.47354739,17.23237181,14307,,ITF,ITF4,ITF43
+2021-01-19T17:00:00,ITA,16,Puglia,074,Brindisi,BR,40.63848545,17.94601575,8044,,ITF,ITF4,ITF44
+2021-01-19T17:00:00,ITA,16,Puglia,075,Lecce,LE,40.35354285,18.1718973,8949,,ITF,ITF4,ITF45
+2021-01-19T17:00:00,ITA,16,Puglia,110,Barletta-Andria-Trani,BT,41.22705039,16.29520432,12560,,ITF,ITF4,ITF48
+2021-01-19T17:00:00,ITA,16,Puglia,892,Fuori Regione / Provincia Autonoma,,,,562,,ITF,ITF4,
+2021-01-19T17:00:00,ITA,16,Puglia,992,In fase di definizione/aggiornamento,,,,105,,ITF,ITF4,
+2021-01-19T17:00:00,ITA,20,Sardegna,090,Sassari,SS,40.72667657,8.559667131,11603,allineamento parziale casi positivi erroneamente dichiarati in data 16 gennaio (113 casi erroneamente dichiarati)i positivi,ITG,ITG2,ITG2D
+2021-01-19T17:00:00,ITA,20,Sardegna,091,Nuoro,NU,40.32318834,9.330296393,7248,,ITG,ITG2,ITG2E
+2021-01-19T17:00:00,ITA,20,Sardegna,092,Cagliari,CA,39.21531192,9.110616306,8284,,ITG,ITG2,ITG2F
+2021-01-19T17:00:00,ITA,20,Sardegna,095,Oristano,OR,39.90381075,8.591183151000001,2913,,ITG,ITG2,ITG2G
+2021-01-19T17:00:00,ITA,20,Sardegna,111,Sud Sardegna,SU,39.16641462,8.526242676,5971,,ITG,ITG2,ITG2H
+2021-01-19T17:00:00,ITA,20,Sardegna,893,Fuori Regione / Provincia Autonoma,,,,0,,ITG,ITG2,
+2021-01-19T17:00:00,ITA,20,Sardegna,993,In fase di definizione/aggiornamento,,,,0,,ITG,ITG2,
+2021-01-19T17:00:00,ITA,19,Sicilia,081,Trapani,TP,38.01850065,12.51365684,8718,,ITG,ITG1,ITG11
+2021-01-19T17:00:00,ITA,19,Sicilia,082,Palermo,PA,38.11569725,13.362356699999998,33500,,ITG,ITG1,ITG12
+2021-01-19T17:00:00,ITA,19,Sicilia,083,Messina,ME,38.19395845,15.55572302,15819,,ITG,ITG1,ITG13
+2021-01-19T17:00:00,ITA,19,Sicilia,084,Agrigento,AG,37.30971088,13.584574900000002,4848,,ITG,ITG1,ITG14
+2021-01-19T17:00:00,ITA,19,Sicilia,085,Caltanissetta,CL,37.49213171,14.06184973,5482,,ITG,ITG1,ITG15
+2021-01-19T17:00:00,ITA,19,Sicilia,086,Enna,EN,37.56705701,14.27909375,3901,,ITG,ITG1,ITG16
+2021-01-19T17:00:00,ITA,19,Sicilia,087,Catania,CT,37.50287803,15.08704691,35422,,ITG,ITG1,ITG17
+2021-01-19T17:00:00,ITA,19,Sicilia,088,Ragusa,RG,36.92509198,14.73069891,7678,,ITG,ITG1,ITG18
+2021-01-19T17:00:00,ITA,19,Sicilia,089,Siracusa,SR,37.05991687,15.29333182,8280,,ITG,ITG1,ITG19
+2021-01-19T17:00:00,ITA,19,Sicilia,894,Fuori Regione / Provincia Autonoma,,,,0,,ITG,ITG1,
+2021-01-19T17:00:00,ITA,19,Sicilia,994,In fase di definizione/aggiornamento,,,,0,,ITG,ITG1,
+2021-01-19T17:00:00,ITA,09,Toscana,045,Massa Carrara,MS,44.03674425,10.14173829,8058,,ITI,ITI1,ITI11
+2021-01-19T17:00:00,ITA,09,Toscana,046,Lucca,LU,43.84432283,10.50151366,13338,,ITI,ITI1,ITI12
+2021-01-19T17:00:00,ITA,09,Toscana,047,Pistoia,PT,43.933465000000005,10.91734146,10908,,ITI,ITI1,ITI13
+2021-01-19T17:00:00,ITA,09,Toscana,048,Firenze,FI,43.76923077,11.25588885,35716,,ITI,ITI1,ITI14
+2021-01-19T17:00:00,ITA,09,Toscana,049,Livorno,LI,43.55234873,10.3086781,9706,,ITI,ITI1,ITI16
+2021-01-19T17:00:00,ITA,09,Toscana,050,Pisa,PI,43.71553206,10.40127259,17587,,ITI,ITI1,ITI17
+2021-01-19T17:00:00,ITA,09,Toscana,051,Arezzo,AR,43.46642752,11.88228844,11538,,ITI,ITI1,ITI18
+2021-01-19T17:00:00,ITA,09,Toscana,052,Siena,SI,43.31816374,11.33190988,5739,,ITI,ITI1,ITI19
+2021-01-19T17:00:00,ITA,09,Toscana,053,Grosseto,GR,42.76026758,11.11356398,4347,,ITI,ITI1,ITI1A
+2021-01-19T17:00:00,ITA,09,Toscana,100,Prato,PO,43.88062274,11.09703315,10946,,ITI,ITI1,ITI15
+2021-01-19T17:00:00,ITA,09,Toscana,895,Fuori Regione / Provincia Autonoma,,,,555,,ITI,ITI1,
+2021-01-19T17:00:00,ITA,09,Toscana,995,In fase di definizione/aggiornamento,,,,0,,ITI,ITI1,
+2021-01-19T17:00:00,ITA,10,Umbria,054,Perugia,PG,43.10675841,12.38824698,23994,,ITI,ITI2,ITI21
+2021-01-19T17:00:00,ITA,10,Umbria,055,Terni,TR,42.56071258,12.6466875,7299,,ITI,ITI2,ITI22
+2021-01-19T17:00:00,ITA,10,Umbria,897,Fuori Regione / Provincia Autonoma,,,,1329,,ITI,ITI2,
+2021-01-19T17:00:00,ITA,10,Umbria,997,In fase di definizione/aggiornamento,,,,0,,ITI,ITI2,
+2021-01-19T17:00:00,ITA,02,Valle d'Aosta,007,Aosta,AO,45.73750286,7.320149366,7412,,ITC,ITC2,ITC20
+2021-01-19T17:00:00,ITA,02,Valle d'Aosta,898,Fuori Regione / Provincia Autonoma,,,,263,,ITC,ITC2,
+2021-01-19T17:00:00,ITA,02,Valle d'Aosta,998,In fase di definizione/aggiornamento,,,,9,,ITC,ITC2,
+2021-01-19T17:00:00,ITA,05,Veneto,023,Verona,VR,45.43839046,10.99352685,58360,,ITH,ITH3,ITH31
+2021-01-19T17:00:00,ITA,05,Veneto,024,Vicenza,VI,45.547497,11.54597109,49465,,ITH,ITH3,ITH32
+2021-01-19T17:00:00,ITA,05,Veneto,025,Belluno,BL,46.13837528,12.21704167,16726,,ITH,ITH3,ITH33
+2021-01-19T17:00:00,ITA,05,Veneto,026,Treviso,TV,45.66754571,12.24507363,59136,,ITH,ITH3,ITH34
+2021-01-19T17:00:00,ITA,05,Veneto,027,Venezia,VE,45.43490485,12.33845213,47734,,ITH,ITH3,ITH35
+2021-01-19T17:00:00,ITA,05,Veneto,028,Padova,PD,45.40692987,11.87608718,54900,,ITH,ITH3,ITH36
+2021-01-19T17:00:00,ITA,05,Veneto,029,Rovigo,RO,45.07107289,11.79007,9201,,ITH,ITH3,ITH37
+2021-01-19T17:00:00,ITA,05,Veneto,899,Fuori Regione / Provincia Autonoma,,,,4001,,ITH,ITH3,
+2021-01-19T17:00:00,ITA,05,Veneto,999,In fase di definizione/aggiornamento,,,,604,,ITH,ITH3,
