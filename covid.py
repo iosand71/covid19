@@ -61,6 +61,8 @@ def calc_percentages(df):
     df_pct = df[df.columns.difference(['date', 'stato', 'note', 'note_it', 'note_en',
                                        'note_test', 'note_casi',
                                        'casi_da_sospetto_diagnostico', 'casi_da_screening',
+                                       'totale_positivi_test_molecolare', 'totale_positivi_test_antigenico_rapido', 'tamponi_test_molecolare','tamponi_test_antigenico_rapido',
+                                       'codice_nuts_1','codice_nuts_2',
                                        'codice_regione', 'denominazione_regione', 'lat', 'long'])].pct_change()
     df_pct.insert(0, 'data', df.date)
 
