@@ -13,6 +13,9 @@ dipendenze gestite con poetry:
 
 https://python-poetry.org/docs/#installation
 
+- poetry install
+- poetry run ...
+
 ## Riga di comando
 
 ```
