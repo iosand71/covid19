@@ -726,7 +726,7 @@ pytz = "*"
 
 [[package]]
 name = "lxml"
-version = "4.6.4"
+version = "4.6.5"
 description = "Powerful and Pythonic XML processing library combining libxml2/libxslt with the ElementTree API."
 category = "main"
 optional = false
