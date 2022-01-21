@@ -19,7 +19,7 @@ pylint = "^2.7.2"
 [tool.poetry.dev-dependencies]
 jupyter = "^1.0"
 ipywidgets = "^7.5"
-ipython = "^7.16"
+ipython = "^7.31"
 nbconvert = {version = "^6.0.0b7", allow-prereleases = true}
 
 [build-system]
